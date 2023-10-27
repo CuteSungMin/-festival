@@ -4,7 +4,7 @@ const Section1 = () => {
 
     return ( 
         <section className="section1">
-            <article className="w1320">
+            <article className="w1500">
                 <div>
                     <h2>경복궁 별빛야행</h2>
                     <h2 className="txtBorder">정보</h2>
