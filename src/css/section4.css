@@ -1,0 +1,29 @@
+.section4{
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0 auto;
+} 
+.sec4Padding{
+    padding: 250px 0px;
+}
+.section4Aticle{
+    width: 50%;
+}
+h1{
+    font-size: 80px;
+    font-weight:700; 
+}
+.sec4MoreBtn{
+    margin-top: 420px;
+}
+.notice{
+    padding: 46px 0;
+    border-top: 1px solid white;
+}
+.notice:last-of-type{
+    border-bottom:1px solid white;
+}
+.notice p{
+    font-size: 18px;
+    font-weight: 400;
+}

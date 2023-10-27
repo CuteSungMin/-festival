@@ -1,21 +1,17 @@
-.footer{
-    width: 1500px;
-    padding: 0px 200px;
-} 
-
-.logoBox{
-    padding: 55px 0px 35px 0px;
-    color: white;
+footer{
+    padding: 100px 0 60px;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
     width: 100px;
     height: 100px;
-    background-color: azure;
-    text-align: center;
-    line-height: 100px;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
 }
 .tel{
-    color: white;
     font-size: 16px;
 }
 .tel p{
@@ -30,15 +26,9 @@
     margin-top: 20px;
     display: flex;
 }
-.sns div{
-    margin-right: 15px;
-    width: 33px;
-    height: 33px;
-    background-color: yellow;
-}
 
-.copy{
+/* .copy{
     padding: 30px 0;
     font-size: 16px;
     color: #6D6D6D;
-}
+} */
