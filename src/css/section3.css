@@ -1,41 +1,39 @@
 .section3{
     /* padding: 250px 0 190px; */
-    /* width: 100%; */
-    height: 500vh;
-    /* overflow: hidden; */
+    height: 400vh;
 }
 .sticky {
     position: sticky;
     /* top: 190px; */
+    display: flex;
     top: 0;
     height: 100vh;
-    display: flex;
-    /* align-items: center; */
-    top: 50%;
-    transform: translateY(-10%);
     justify-content: center;
-    /* overflow: hidden; */
-}
+    overflow: hidden;
+    /* align-items: center; */
+    }
 .sticky>h1{
+    /* top: 190px; */
+    margin-top: 190px;
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 900;    
+    height: 100%;
     width: 100%;
-    display: flex;  
-    /* height: 80%; */
-    /* height: 100%; */
+    /* text-align: left; */
 }
 
 .eventWrap{
     position: absolute;
     width: 100%;
-    /* height: 25vw; */
-    height: 50vh;
+    height: 25vw;
+    /* height: 50vh; */
     display: flex;
+    top: 350px;
     align-items: center;
     justify-content: space-between;
-    /* transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    margin: 0 auto; */
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -49,12 +47,13 @@
     position: relative;
     transform-style: preserve-3d;
     transform: 
-    perspective(100vw)
-    /* translateX(100vw)  */
-    /* rotateY(180deg) */
+    perspective(4000px)
+    translateX(100vw) 
+    rotateY(180deg)
     ;
     transition: transform 0.1s;
 }
+
 
 .front,.back {
     position: absolute;
@@ -86,14 +85,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     background-color: rgba(255,255,255,0.1);
     font-size: 16px;
     line-height: 1.5;
-    /* background-image: url('../img/event2.jpg');
-    background-size: contain;
-    background-repeat: no-repeat; */
 }
-.event:active{
-    transform: rotateY(180deg);
-}
+
+/* @media screen and (orientation:portrait) {
+    .w1500{
+        width: 100%;
+    }
+    .eventWrap{
+      display: grid;
+      height: initial;
+      width: initial;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5vw;
+      justify-items: center;
+    }
+  
+    .event {
+      width: 35vw;
+      height: 45vw;
+    }
+  } */

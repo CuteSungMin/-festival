@@ -14,8 +14,8 @@ const Footer = () => {
                     <p><span>전화번호</span>(02) 566-6300 </p>
                 </div>
                 <div className="sns">
-                    <span className="youtube"><a href="https://www.youtube.com/watch?v=jyJZ211wQuM"><img src={youtube}/></a></span>
-                    <span className="instagram"><a href="https://www.instagram.com/gyeongbokgung_palace_official/"><img src={insta}/></a></span>
+                    <span className="youtube"><a href="https://www.youtube.com/watch?v=jyJZ211wQuM" target='_blank'><img src={youtube}/></a></span>
+                    <span className="instagram"><a href="https://www.instagram.com/gyeongbokgung_palace_official/" target='_blank'><img src={insta}/></a></span>
                 </div>
                 <p className="copy">Copyright(c) 2023 Gyeongbokgung Night Trip. All right reserved</p>
             </div>
