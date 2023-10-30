@@ -75,11 +75,10 @@ const Section2 = () => {
         <section className="section2">
             <div className="sec2Padding w1500"> 
                 <div className="stickyBox">
-                    <div className="sticky" ref={sticky}>
+                    <div className="sticky2" ref={sticky}>
                     <button className="programMoreBtn">더보기</button>
                     <h1 className="programH1">경복궁 프로그램</h1>
                
-
                         <div className={`slide 
                             ${isSlide1Visible ? 'slide1' : 'hidden1'} 
                             ${isSlide1Visible2 ? 'slide1' : 'hidden2'}
@@ -139,7 +138,7 @@ const Section2 = () => {
                             </article>
                         </div>   
                         <div className={`slide 
-                            ${isSlide4VisibleA ? 'slide2' : 'visible'}
+                            ${isSlide4VisibleA ? 'slide4' : 'visible'}
                             `
                         }>
                             <article className="section2Aticle">

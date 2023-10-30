@@ -77,14 +77,13 @@ p {
   opacity: 1;
 }
 
-
 .programImgbox {
   width: 100%;
 }
 
 .programImgbox img{
   width: 100%;
-  height: 532px;
+  height: 534px;
 }
 
 .bannerArrow {
@@ -164,11 +163,12 @@ p {
   width: 100%;
   height: 400vh;
 }
-.sticky{
+.sticky2{
   position: sticky;
-  height: 534px;
+  height: 540px;
   top:200px;
   overflow: hidden;
+
   
 }
 .slide1{
