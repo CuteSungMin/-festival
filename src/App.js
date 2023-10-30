@@ -21,7 +21,11 @@ function App() {
         <Top/>
         <Header/>
         <Section1/>
+        <section id="section2"></section>
         <Section3/>
+        <section id="section4"></section>
+        <section id="section5"></section>
+
         <Footer/>
     </div>
   );
