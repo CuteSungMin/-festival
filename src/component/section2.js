@@ -31,14 +31,14 @@ const Section2 = () => {
             console.log(scrollY);
     //  내렸을때 사라짐 
             if (scrollY >= 3000) {
-              setSlide1Visible(false);
-              setSlide2VisibleA(false);
+                setSlide1Visible(false);
+                setSlide2VisibleA(false);
             }
             if (scrollY >= 3300) {
-              setSlide1Visible2(false);
+                 setSlide1Visible2(false);
             }
             if(scrollY >= 3600){
-              setSlide1Visible3(false);
+                setSlide1Visible3(false);
             }
             if(scrollY >= 3900){
                 setSlide2Visible(false);
@@ -50,19 +50,21 @@ const Section2 = () => {
             if(scrollY >= 4500){
                 setSlide2Visible3(false);
             }
-            if(scrollY >= 4900){
+            if(scrollY >= 4800){
                 setSlide3Visible(false);
                 setSlide4VisibleA(false);
             }
-            if(scrollY >= 5300){
+            if(scrollY >= 5100){
                 setSlide3Visible2(false);
             }
-            if(scrollY >= 5700){
+            if(scrollY > 5400){
                 setSlide3Visible3(false);
-            }
-          };
+            }   
+   
         /// 올렸을때 다시 생김
 
+          };
+          
 
 
           window.addEventListener('scroll', handleScroll);
@@ -76,6 +78,7 @@ const Section2 = () => {
                     <div className="sticky" ref={sticky}>
                     <h1>경복궁 프로그램</h1>
                     <button className="moreBtn">더보기</button>
+
                         <div className={`slide 
                             ${isSlide1Visible ? 'slide1' : 'hidden1'} 
                             ${isSlide1Visible2 ? 'slide1' : 'hidden2'}
@@ -154,15 +157,32 @@ const Section2 = () => {
                 </div>    
             </div>
             
-     
-            <div className="rollingBanner">
-                <img className="bannerArrow" src={bannerArrow}></img>
-                <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
-                <img className="bannerArrow" src={bannerArrow}></img>
-                <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
-                <img className="bannerArrow" src={bannerArrow}></img>
-                <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
-            </div>
+            <div className="bannerWrap">                
+                <div className="rollingBanner">
+                    <div className="banner">         
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
+                    </div>
+                </div>
+                <div className="rollingBanner Clone">
+                    <div className="banner">         
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtWhite'>2023 경복궁 별빛야행 축제</p>
+                        <img className="bannerArrow" src={bannerArrow}></img>
+                        <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
+                    </div>
+                </div>
+            </div>    
         </section>
 
      );

@@ -2,62 +2,57 @@
   display: flex;
   justify-content: space-between;
 }
-
 .section2 {
-
   width: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 .sec2Padding {
-  padding: 250px 0px 190px 0px;
+  padding: 15.625rem 0rem 11.875rem 0rem;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 
 }
 
 h2 {
-  margin-top: 120px;
-  font-size: 40px;
+  margin-top: 8.125rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .section2Aticle {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   width: 50%;
 }
 
 p {
   display: block;
-  font-size: 20px;
-  overflow: hidden;
+  font-size: 1.25rem;
 }
 
 .section2Aticle p:first-of-type {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .section2Aticle p {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 
 .moreBtn {
   position: relative;
-  width: 200px;
-  height: 60px;
-  margin-top: 340px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  width: 12.5rem;
+  height: 3.75rem;
+  margin-top: 21.25rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 100;
-  line-height: 60px;
+  line-height: 3.75rem;
   overflow: hidden;
   cursor: pointer;
   z-index: 9999;
@@ -66,10 +61,10 @@ p {
 .moreBtn:after {
   position: absolute;
   content: '';
-  top: calc(50% - 50px);
-  left: -50px;
-  width: 20px;
-  height: 100px;
+  top: calc(50% - 3.125rem);
+  left: -3.125rem;
+  width: 1.25rem;
+  height: 6.25rem;
   background: rgba(255, 255, 255, 1);
   transform: rotate(30deg);
   transition: 1000ms;
@@ -77,7 +72,7 @@ p {
 }
 
 .moreBtn:hover:after {
-  left: calc(100% + 50px);
+  left: calc(100% + 3.125rem);
   opacity: 1;
 }
 
@@ -88,34 +83,70 @@ p {
 
 .programImgbox img{
   width: 100%;
-  height: 532px;
+  height: 33.25rem;
 }
 
 .bannerArrow {
-  padding: 35px 50px;
-  width: 50px;
-  height: 50px;
+  padding: 2.1875rem 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
   background-size: contain;
 }
 
 .rollingBanner {
   display: flex;
+  width: 200%;
+  white-space: nowrap;
+  height: 7.5rem;
+  line-height: 7.25rem;
+  background-color: yellow;
+  animation: infiniteAnimation1 30s linear 0s infinite normal;
+}
+.Clone{
+  animation: infiniteAnimation2  30s linear 0s infinite normal;
+}
+@keyframes infiniteAnimation1 {
+  0% {
+      transform: translateX(0%);
+  }
+  50% {
+      transform: translateX(-100%);
+  }
+  50.1% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+@keyframes infiniteAnimation2 {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-200%);
+  }
+}
+.bannerWrap{
+  display: flex;
   width: 100%;
   overflow: hidden;
-  height: 120px;
-  line-height: 116px;
-  background-color: yellow;
 }
-
+    .banner{
+      display: flex;
+      padding: 0, 20px;
+}
 .bannerTxtWhite {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
+  margin-right: 3.125rem;
 }
 
 .bannerTxtBlack {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
   color: #000;
+  margin-right: 3.125rem;
 }
 .slide{
   position: absolute;
@@ -128,13 +159,14 @@ p {
 .stickyBox{
   position: relative;
   width: 100%;
-  height: 380vh;
+  height: 400vh;
 }
 .sticky{
   position: sticky;
-  height: 530px;
-  top:200px;
+  height: 33.375rem;
+  top:12.5rem;
   overflow: hidden;
+  
 }
 .slide1{
   z-index: 4;
@@ -152,7 +184,7 @@ p {
   z-index: 1;
 }
 .hidden1{
-  animation: hidden1 1s linear alternate;
+  animation: hidden1 0.3s linear alternate;
   animation-fill-mode: forwards;
 }
 .visible{
@@ -164,41 +196,41 @@ p {
     transform: translateY(0);
     opacity: 1;
   }to{
-    transform: translateY(177px);
-    opacity: 0.7;
+    transform: translateY(11.0625rem);
+    opacity: 0.6;
   }
 }
 
 .hidden2{
-  animation: hidden2 1s linear alternate;
+  animation: hidden2 0.3s linear alternate;
   animation-fill-mode: forwards;
 
 }
 
 @keyframes hidden2{
   from {
-    transform: translateY(177px);
-    opacity: 0.7;
+    transform: translateY(11.0625rem);
+    opacity: 0.6;
   }to{
-    transform: translateY(355px);
-    opacity: 0.4;
+    transform: translateY(22.1875rem);
+    opacity: 0.3;
   }
 }
 
 
 .hidden3{
-  animation: hidden3 1 linear alternate;
+  animation: hidden3 0.3s linear alternate;
   animation-fill-mode: forwards;
 
 }
 
 @keyframes hidden3{
   from {
-    transform: translateY(355px);
-    opacity: 0.4;
+    transform: translateY(22.1875rem);
+    opacity: 0.3;
   }to{
-    transform: translateY(532px);
-    opacity: 0.1;
+    transform: translateY(33.25rem);
+    opacity: 0;
   }
 }
 
