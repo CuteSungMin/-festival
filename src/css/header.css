@@ -10,7 +10,8 @@
     z-index: 9999;
   }
   .LOGO{
-    background: url(../img/Logo_white.png);
+    /* background: url(../img/Logo_white.png); */
+    background: url(../../public/img/Logo_white.png);
     background-size: cover;
     width: 100px;
     height: 100px;

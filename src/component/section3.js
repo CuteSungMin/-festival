@@ -13,6 +13,7 @@ const CardFlipOnScroll = ({wrapperRef}) => {
     cards.forEach((card, i) => {
       const s = start + step * i;
       const e = s + step * (cards.length + 1);
+      
 
       if (window.scrollY <= s) {
         card.style.transform = 
@@ -29,20 +30,16 @@ const CardFlipOnScroll = ({wrapperRef}) => {
         perspective(100vw) 
         translateX(0vw) 
         `;
+        card.addEventListener('mouseenter',function(e){
+          e.currentTarget.style.transform='rotateY(180deg)'
+        })
+        card.addEventListener('mouseleave',function(e){
+            e.currentTarget.style.transform='rotateY(0deg)';
+        })
       }
     });
   };
-  const cards=document.querySelectorAll('.event');
-  cards.forEach((card,i)=>{
-    card.addEventListener('mouseenter',function(e){
-        e.currentTarget.style.transform='rotateY(180deg)'
-    })
-    card.addEventListener('mouseleave',function(e){
-        e.currentTarget.style.transform='rotateY(0deg)';
-    })
-  })
   
-
   useEffect(() => {
     animate();
     const handleResize = () => {
@@ -60,7 +57,6 @@ const CardFlipOnScroll = ({wrapperRef}) => {
     };
   }, [wrapperRef]);
 
-//   return null;
 };
 
 
