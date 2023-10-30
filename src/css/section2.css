@@ -7,72 +7,73 @@
   margin: 0 auto;
 }
 .sec2Padding {
-  padding: 15.625rem 0rem 11.875rem 0rem;
+  padding: 250px 0px 190px 0px;
 }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 3.125rem;
-
-}
-
-h2 {
-  margin-top: 8.125rem;
-  font-size: 2.5rem;
+.programH1{
+  margin-top: 0 !important;
+  margin-left: -200px;
+  font-size: 80px;
   font-weight: 700;
 }
+
+.programH2{
+  margin-top: 130px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 
 .section2Aticle {
   display: flex;
-
+  flex-direction: column;
   width: 50%;
 }
 
 p {
   display: block;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .section2Aticle p:first-of-type {
-  margin-top: 1.25rem;
+  margin-top: 20px;
 }
 
 .section2Aticle p {
-  margin-top: 0.625rem;
+  margin-top: 10px;
 }
 
 
-.moreBtn {
+.programMoreBtn {
   position: relative;
-  width: 12.5rem;
-  height: 3.75rem;
-  margin-top: 21.25rem;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.7);
+  width: 200px;
+  height: 60px;
+  margin-top: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 100;
-  line-height: 3.75rem;
+  line-height: 60px;
   overflow: hidden;
   cursor: pointer;
   z-index: 9999;
 
 }
-.moreBtn:after {
+.programMoreBtn:after {
   position: absolute;
   content: '';
-  top: calc(50% - 3.125rem);
-  left: -3.125rem;
-  width: 1.25rem;
-  height: 6.25rem;
+  top: calc(50% - 50px);
+  left: -50px;
+  width: 20px;
+  height: 100px;
   background: rgba(255, 255, 255, 1);
   transform: rotate(30deg);
   transition: 1000ms;
   opacity: 0;
 }
 
-.moreBtn:hover:after {
-  left: calc(100% + 3.125rem);
+.programMoreBtn:hover:after {
+  left: calc(100% + 50px);
   opacity: 1;
 }
 
@@ -83,13 +84,13 @@ p {
 
 .programImgbox img{
   width: 100%;
-  height: 33.25rem;
+  height: 532px;
 }
 
 .bannerArrow {
-  padding: 2.1875rem 3.125rem;
-  width: 3.125rem;
-  height: 3.125rem;
+  padding: 35px 50px;
+  width: 50px;
+  height: 50px;
   background-size: contain;
 }
 
@@ -97,8 +98,8 @@ p {
   display: flex;
   width: 200%;
   white-space: nowrap;
-  height: 7.5rem;
-  line-height: 7.25rem;
+  height: 120px;
+  line-height: 116px;
   background-color: yellow;
   animation: infiniteAnimation1 30s linear 0s infinite normal;
 }
@@ -132,21 +133,21 @@ p {
   width: 100%;
   overflow: hidden;
 }
-    .banner{
+.banner{
       display: flex;
-      padding: 0, 20px;
+      padding: 0, 1.25rem;
 }
 .bannerTxtWhite {
-  font-size: 2.1875rem;
+  font-size: 35px;
   font-weight: bold;
-  margin-right: 3.125rem;
+  margin-right: 50px;
 }
 
 .bannerTxtBlack {
-  font-size: 2.1875rem;
+  font-size: 35px;
   font-weight: bold;
   color: #000;
-  margin-right: 3.125rem;
+  margin-right: 50px;
 }
 .slide{
   position: absolute;
@@ -158,13 +159,15 @@ p {
 
 .stickyBox{
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 400vh;
 }
 .sticky{
   position: sticky;
-  height: 33.375rem;
-  top:12.5rem;
+  height: 534px;
+  top:200px;
   overflow: hidden;
   
 }
@@ -196,7 +199,7 @@ p {
     transform: translateY(0);
     opacity: 1;
   }to{
-    transform: translateY(11.0625rem);
+    transform: translateY(177px);
     opacity: 0.6;
   }
 }
@@ -209,10 +212,10 @@ p {
 
 @keyframes hidden2{
   from {
-    transform: translateY(11.0625rem);
+    transform: translateY(177px);
     opacity: 0.6;
   }to{
-    transform: translateY(22.1875rem);
+    transform: translateY(355px);
     opacity: 0.3;
   }
 }
@@ -226,10 +229,10 @@ p {
 
 @keyframes hidden3{
   from {
-    transform: translateY(22.1875rem);
+    transform: translateY(355px);
     opacity: 0.3;
   }to{
-    transform: translateY(33.25rem);
+    transform: translateY(532px);
     opacity: 0;
   }
 }

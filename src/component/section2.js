@@ -76,8 +76,9 @@ const Section2 = () => {
             <div className="sec2Padding w1500"> 
                 <div className="stickyBox">
                     <div className="sticky" ref={sticky}>
-                    <h1>경복궁 프로그램</h1>
-                    <button className="moreBtn">더보기</button>
+                    <button className="programMoreBtn">더보기</button>
+                    <h1 className="programH1">경복궁 프로그램</h1>
+               
 
                         <div className={`slide 
                             ${isSlide1Visible ? 'slide1' : 'hidden1'} 
@@ -87,7 +88,7 @@ const Section2 = () => {
                         }>
                             <article className="section2Aticle">
                                 <div>
-                                    <h2>궁중음식 체험</h2>       
+                                    <h2 className="programH2">궁중음식 체험</h2>       
                                     <p>궁궐의 부엌인 ‘소주방’에 들러 조선의 왕이 먹던 일상식인 12첩 반상을 맛보게 됩니다.</p>
                                 </div>
                             </article>
@@ -107,7 +108,7 @@ const Section2 = () => {
                         }>
                             <article className="section2Aticle">
                                 <div>
-                                    <h2>국악공연 관람</h2>       
+                                    <h2 className="programH2">국악공연 관람</h2>       
                                     <p>맛있는 수라상을 먹는 동안 국악공연이 함께 펼쳐져 맛과 멋의 풍류로 가득한 밤이 될 것입니다.</p>
                                 </div>
                             </article>
@@ -126,7 +127,7 @@ const Section2 = () => {
                         }>
                             <article className="section2Aticle">
                                 <div>
-                                    <h2>야간해설탐방</h2>       
+                                    <h2 className="programH2">야간해설탐방</h2>       
                                     <p>경복궁 북측 권역을 탐방하며, 복원을 완료한 향원정을 고즈넉한 분위기에서 감상하실 수 있습니다.</p>
                                 </div>
         
@@ -143,7 +144,7 @@ const Section2 = () => {
                         }>
                             <article className="section2Aticle">
                                 <div>
-                                    <h2>한복무료관람</h2>       
+                                    <h2 className="programH2">한복무료관람</h2>       
                                     <p>전통한복, 생활한복  모두 무료관람 대상. 상의(저고리)와 하의(치마, 바지)를 기본으로  함.</p>
                                 </div>
                             </article>

@@ -6,7 +6,7 @@ const Section4 = () => {
             <div className="sec4Padding w1500 flex">
                 <article className="section4Aticle">
                     <h1>경복궁 커뮤니티</h1>
-                    <button className="moreBtn sec4MoreBtn">더보기</button>
+                    <button className="programMoreBtn sec4MoreBtn">더보기</button>
                 </article>
                 <article className="section4Aticle">
                     <div className="notice flex">

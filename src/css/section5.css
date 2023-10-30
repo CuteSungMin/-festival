@@ -1,0 +1,67 @@
+.section5{
+    margin: 250px 0 190px
+}
+.section5Title{
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 150px;
+}
+/* 탑 슬라이드*/
+.slideWrapper{
+    overflow: hidden;
+    width: 100%;
+}
+.moveWrapper{
+    display: flex;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.topOriginal{
+    animation: topOriginalMove 40s linear infinite normal none running;
+}
+.topCloneBox{
+    animation: topCloneMove 40s linear infinite;
+}
+.slide.stop{
+    animation-play-state: paused;
+}
+.moveBox{
+    width: 300px;
+    height: 300px;
+    margin:10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.moveBox:hover{
+    transform: scale(0.98);
+}
+@keyframes topOriginalMove{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-100%);}
+    50.001% {transform: translateX(100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes topCloneMove{
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-200%);}
+}
+/* 아래 슬라이드*/
+.botOriginal{
+    animation: botOriginalMove 40s linear infinite normal none running;
+}
+.botCloneBox{
+    animation: botCloneMove 40s linear infinite;
+}
+@keyframes botOriginalMove{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(100%);}
+    50.001% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes botCloneMove{
+    0% {transform: translateX(-200%);}
+    100% {transform: translateX(0%);}
+}
