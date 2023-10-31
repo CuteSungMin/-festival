@@ -2,24 +2,24 @@
   display: flex;
   justify-content: space-between;
 }
+
 .section2 {
   width: 100%;
   margin: 0 auto;
 }
 .sec2Padding {
-  padding: 250px 0px 190px 0px;
+  padding: 15.625rem 0rem 11.875rem 0rem;
 }
 
 .programH1{
   margin-top: 0 !important;
-  margin-left: -200px;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
 }
 
 .programH2{
-  margin-top: 130px;
-  font-size: 40px;
+  margin-top: 8.125rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -32,28 +32,28 @@
 
 p {
   display: block;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .section2Aticle p:first-of-type {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .section2Aticle p {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 
 .programMoreBtn {
   position: relative;
-  width: 200px;
-  height: 60px;
-  margin-top: 480px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  width: 12.5rem;
+  height: 3.75rem;
+  margin-top: 24.625rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 100;
-  line-height: 60px;
+  line-height: 3.75rem;
   overflow: hidden;
   cursor: pointer;
   z-index: 9999;
@@ -62,10 +62,10 @@ p {
 .programMoreBtn:after {
   position: absolute;
   content: '';
-  top: calc(50% - 50px);
-  left: -50px;
-  width: 20px;
-  height: 100px;
+  top: calc(50% - 3.125rem);
+  left: -3.125rem;
+  width: 1.25rem;
+  height: 6.25rem;
   background: rgba(255, 255, 255, 1);
   transform: rotate(30deg);
   transition: 1000ms;
@@ -73,7 +73,7 @@ p {
 }
 
 .programMoreBtn:hover:after {
-  left: calc(100% + 50px);
+  left: calc(100% + 3.125rem);
   opacity: 1;
 }
 
@@ -83,13 +83,13 @@ p {
 
 .programImgbox img{
   width: 100%;
-  height: 534px;
+  height: 33.375rem;
 }
 
 .bannerArrow {
-  padding: 35px 50px;
-  width: 50px;
-  height: 50px;
+  padding: 2.1875rem 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
   background-size: contain;
 }
 
@@ -97,8 +97,8 @@ p {
   display: flex;
   width: 200%;
   white-space: nowrap;
-  height: 120px;
-  line-height: 116px;
+  height: 7.5rem;
+  line-height: 7.25rem;
   background-color: yellow;
   animation: infiniteAnimation1 30s linear 0s infinite normal;
 }
@@ -134,26 +134,23 @@ p {
 }
 .banner{
       display: flex;
-      padding: 0, 1.25rem;
+      padding: 0, 20px;
 }
 .bannerTxtWhite {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 
 .bannerTxtBlack {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
   color: #000;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
-.slide{
+.slideBox{
   position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
+  top:0;
 }
 
 .stickyBox{
@@ -161,79 +158,37 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400vh;
+  height: 225vh;
+  margin-bottom: 12.5rem;
 }
 .sticky2{
   position: sticky;
-  height: 540px;
-  top:200px;
+  height: 33.375rem;
+  top:12.5rem;
   overflow: hidden;
-
-  
-}
-.slide1{
-  z-index: 4;
-}
-.slide2{
-  opacity: 0;
-  z-index: 3;
-}
-.slide3{
-  opacity: 0;
-  z-index: 2;
-}
-.slide4{
-  opacity: 0;
-  z-index: 1;
-}
-.hidden1{
-  animation: hidden1 0.3s linear alternate;
-  animation-fill-mode: forwards;
-}
-.visible{
-  opacity: 1;
 }
 
-@keyframes hidden1{
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }to{
-    transform: translateY(177px);
-    opacity: 0.6;
-  }
+.up1{
+  transition: 1.5s ease;
+  transform: translateY(-25%);
 }
-
-.hidden2{
-  animation: hidden2 0.3s linear alternate;
-  animation-fill-mode: forwards;
-
+.up2{
+  transition: 1.5s ease;
+  transform: translateY(-50%);
 }
-
-@keyframes hidden2{
-  from {
-    transform: translateY(177px);
-    opacity: 0.6;
-  }to{
-    transform: translateY(355px);
-    opacity: 0.3;
-  }
+.up3{
+  transition: 1.5s ease;
+  transform: translateY(-75%);
 }
-
-
-.hidden3{
-  animation: hidden3 0.3s linear alternate;
-  animation-fill-mode: forwards;
-
+.down1{
+  transition: 1.5s ease;
+  transform: translateY(-50%);
 }
-
-@keyframes hidden3{
-  from {
-    transform: translateY(355px);
-    opacity: 0.3;
-  }to{
-    transform: translateY(532px);
-    opacity: 0;
-  }
+.down2{
+  transition: 1.5s ease;
+  transform: translateY(-25%);
 }
-
+.down3{
+  transition: 1.5s ease;
+  transform: translateY(0%);
+}
