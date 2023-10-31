@@ -13,7 +13,7 @@ const Section1 = () => {
                         <br/>외소주방에서 궁중음식체험과 전통 공연을 즐기고,
                         <br/>전문 해설사와 함께 별빛 산책을 떠나보세요.
                     </p>
-                    <div className="btn_viewmore">VIEWMORE</div>
+                    <div className="btn_viewmore"></div>
                 </div>
                 <ul>
                     <li>

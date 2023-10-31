@@ -8,10 +8,11 @@ import Section3 from './component/section3';
 import Header from "./component/header";
 import Top from "./component/top";
 import {useState,useRef} from 'react';
+import {Link, Route,Routes} from 'react-router-dom';
+import Section1_supPage from './component/section1_subPage';
 
 
 function App() {
-  
   return(
     <div>
         <section>
@@ -19,13 +20,8 @@ function App() {
           <Palace />
         </section>
         <Top/>
-        <Header/>
         <Section1/>
-        <section id="section2"></section>
         <Section3/>
-        <section id="section4"></section>
-        <section id="section5"></section>
-
         <Footer/>
     </div>
   );

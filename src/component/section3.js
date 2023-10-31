@@ -14,6 +14,9 @@ const Section3 = () => {
     const step = (end - start) / (cards.length * 2);
 
     const updateTransforms = () => {
+      if(window.innerWidth<=1024){
+        return ;
+      }
       const transforms = cards.map((card, i) => {
         const s = start + step * i;
         const e = s + step * (cards.length + 1);
@@ -25,14 +28,13 @@ const Section3 = () => {
           return 'translateX(0vw)';
         }
       });
-
       setCardTransforms(transforms);
     };
 
     updateTransforms();
 
     const handleResize = () => {
-      updateTransforms();
+        updateTransforms();
     };
 
     const handleScroll = () => {
@@ -66,16 +68,15 @@ const Section3 = () => {
       <article className="sticky">
         <h1>경복궁 행사</h1>
         <div className="eventWrap">
-        {[1, 2, 3, 4].map((index) => (
+        {[1, 2, 3, 4].map((idx) => (
             <div
-              key={index}
+              key={idx}
               className="event"
-              
-              style={{ transform: cardTransforms[index - 1] }}
-              ref={(cardRef) => (cardRefs.current[index - 1] = cardRef)}
+              style={{ transform: cardTransforms[idx - 1] }}
+              ref={(cardRef) => (cardRefs.current[idx - 1] = cardRef)}
             >
-              <div className={`front front${index}`}></div>
-              <div className="back">{cardContents[index - 1]}</div>
+              <div className={`front front${idx}`}></div>
+              <div className="back">{cardContents[idx - 1]}</div>
             </div>
           ))}
         </div>
