@@ -17,11 +17,13 @@ function App() {
     <div>
         <section>
           <Sky />
-          <Palace />
+          {/* <Palace /> */}
         </section>
-        <Top/>
-        <Section1/>
-        <Section3/>
+        {/* <Top/> */}
+        <Header/>
+        {/* <Section1/> */}
+        {/* <Section3/> */}
+        <Section1_supPage/>
         <Footer/>
     </div>
   );

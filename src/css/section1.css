@@ -46,15 +46,6 @@ h2{
     margin-bottom: 30px;
     align-items: center;
 }
-h3{
-    display: flex;
-    justify-content: space-between;
-    width: 180px; height: 32px;
-    padding:0 4px ;
-    /* border: 1px solid #fff; */
-    background:linear-gradient(90deg, #A8C0FF 0%, #3F2B96 100%);
-    margin-right: 25px;
-}
 .section1 li>h3>span{
     font-size: 20px;
     font-weight: normal;
