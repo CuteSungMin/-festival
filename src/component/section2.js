@@ -131,7 +131,6 @@ const Section2 = () => {
                     </div>    
                 </div>    
             </div>
-            
             <div className="bannerWrap">                
                 <div className="rollingBanner">
                     <div className="banner">         
@@ -157,7 +156,7 @@ const Section2 = () => {
                         <p className='bannerTxtBlack'>2023 경복궁 별빛야행 축제</p>
                     </div>
                 </div>
-            </div>    
+            </div>
         </section>
 
      );
