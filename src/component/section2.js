@@ -19,16 +19,14 @@ const Section2 = () => {
         let i = 1;
         const handleScroll = () => {
             const scrollY = window.pageYOffset;
-            console.log(scrollY)
-            console.log(i)
 
-            if ((scrollY >= 2600) && (i ===1 )) {
+            if ((scrollY >= 2600) && (i===1 )) {
                 setSlideUp1(false);
             }
-            if ((scrollY >= 3200) && (i ===1 )) {
+            if ((scrollY >= 3200) && (i===1 )) {
                 setSlideUp2(false);
             }
-            if((scrollY >= 3800) && (i ===1 )){
+            if((scrollY >= 3800) && (i===1 )){
                 setSlideUp3(false);
             }
             if(scrollY >= 4100){
@@ -38,8 +36,7 @@ const Section2 = () => {
                 setSlideDown1(false);
             }
             if((scrollY <= 3200) && (i===2 )){
-                setSlideDown2(false);
-          
+                setSlideDown2(false);         
             }
             if((scrollY <= 2600) && (i===2 )){
                 setSlideDown3(false);
@@ -78,7 +75,7 @@ const Section2 = () => {
                            ${isSlideDown2 ? 'slideBox' : 'down2'}
                            ${isSlideDown3 ? 'slideBox' : 'down3'}
                             `} ref={slideBox}>
-                            <div className="slide1 flex">
+                            <div className="slide slide1 flex">
                                 <article className="section2Aticle">
                                     <div>
                                         <h2 className="programH2">궁중음식 체험</h2>       
@@ -91,7 +88,7 @@ const Section2 = () => {
                                     </div>
                                 </article>
                             </div>    
-                            <div  className="slide2 flex">
+                            <div  className="slide slide2 flex">
                                 <article className="section2Aticle">
                                     <div>
                                         <h2 className="programH2">국악공연 관람</h2>       
@@ -104,7 +101,7 @@ const Section2 = () => {
                                     </div>
                                 </article>
                             </div>    
-                            <div  className="slide3 flex">
+                            <div  className="slide slide3 flex">
                                 <article className="section2Aticle">
                                     <div>
                                         <h2 className="programH2">야간해설탐방</h2>       
@@ -117,7 +114,7 @@ const Section2 = () => {
                                     </div>
                                 </article>
                             </div>   
-                            <div  className="slide4 flex">
+                            <div  className="slide slide4 flex">
                                 <article className="section2Aticle">
                                     <div>
                                         <h2 className="programH2">한복무료관람</h2>       
