@@ -4,29 +4,36 @@
     margin: 0 auto;
 } 
 .sec4Padding{
-    padding: 15.625rem 0rem;
+    padding: 250px 0px;
 }
 .section4Aticle{
     width: 50%;
 }
 h1{
-    font-size: 5rem;
+    font-size: 80px;
     font-weight:700; 
 }
 .sec4MoreBtn{
-    margin-top: 26.25rem;
+    margin-top: 420px;
 }
 .notice{
     position: relative;
-    padding: 2.875rem 0;
-    border-top: 0.0625rem solid white;
+    padding: 46px 0;
+    border-top: 1px solid white;
     cursor: pointer;
 }
 
 .notice:last-of-type{
-    border-bottom:0.0625rem solid white;
+    border-bottom:1px solid white;
 }
 .notice p{
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 400;
 }
+
+@media (max-width: 1500px){
+    .section2 { width: 90%; }
+     h1 {font-size: calc(100vw * (80/1500));}
+    .notice p {font-size: calc(100vw * (18/1500));}
+    
+  }

@@ -192,3 +192,11 @@ p {
   transition: 1.5s ease;
   transform: translateY(0%);
 }
+
+
+@media (max-width: 1500px){
+  .section2 { width: 90%; }
+  .programH1 {font-size: calc(100vw * (80/1500));}
+  .programH2 {font-size: calc(100vw * (40/1500));}
+  
+}
