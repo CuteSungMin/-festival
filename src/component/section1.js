@@ -1,7 +1,6 @@
 import "../css/section1.css";
 
 const Section1 = () => {
-
     return ( 
         <section className="section1">
             <article className="w1500">
