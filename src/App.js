@@ -9,6 +9,7 @@ import Section3 from './component/section3'
 import Section4 from './component/section4'
 import Section2_subPage from "./page/section2_subPage";
 import Section4_announcement1 from "./page/section4_announcement1";
+import Section4_announcement2 from "./page/section4_announcement2";
 import Section5_subPage from "./page/section5_subPage";
 import Header from "./component/header"
 import Top from "./component/top"
@@ -24,12 +25,13 @@ function App() {
         </section>
         <Top/>
         <Header/>
-        <Section1/>
+        {/* <Section1/>
         <Section2/>
         <Section3/>
-        <Section4/>
+        <Section4/> */}
         {/* <Section2_subPage /> */}
         {/* <Section4_announcement1 /> */}
+        <Section4_announcement2 />
         {/* <Section5_subPage /> */}
         <Footer />
     </div>

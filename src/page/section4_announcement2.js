@@ -1,8 +1,8 @@
-import '../css/section4_announcement1.css'
+import '../css/section4_announcement2.css'
 import headerImg1 from '../img/headerImg1.png';
 import { useRef,useEffect,useState } from 'react';
 
-const Section4_announcement1 = () => {
+const Section4_announcement2 = () => {
     
     const [isLiOn, setLiOn] = useState(0); //초기상태를 0으로 변경
     const lis = useRef([]);
@@ -28,10 +28,8 @@ const Section4_announcement1 = () => {
 
     }, []);
   
-
-    
     return (  
-        <section className='Section4_announcement1'>
+        <section className='Section4_announcement2'>
                <div className='w1500'>
                     <div className='section4SubHeader'>
                         <div><img src={headerImg1}></img></div>
@@ -47,38 +45,22 @@ const Section4_announcement1 = () => {
                     <div>
                         <table className='Section4_announcementTable'>
                             <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>등록일</th>
-                                <th>조회수</th>
-                            </tr>
-                            <tr>
                                 <td>공지</td>
-                                <td>2023 경복궁 별빛야행 입장 및 관람안내</td>
-                                <td>2023-10-18</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2023 경복궁 별빛야행 입장 및 관람안내</td>
-                                <td>2023-10-18</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
                                 <td>2023 경복궁 별빛야행 입장 및 관람안내</td>
                                 <td>2023-10-18</td>
                                 <td>10</td>
                             </tr>
                         </table>
+                        <div className='announcementTextareaBox'>
+                                <textarea className='announcementTextarea'></textarea>
+                        </div>
                     </div>
-                    <div className='searchBox'>
-                        <input type="search" placeholder='제목 + 내용'></input>
-                        <button>전체</button>
+                    <div className='listBox'>
+                        <button>리스트</button>
                     </div>
                 </div>
         </section>
     );
 }
  
-export default Section4_announcement1;
+export default Section4_announcement2;
