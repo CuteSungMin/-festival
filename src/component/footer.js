@@ -22,7 +22,6 @@ const Footer = () => {
                 </div>
                 <div className="sns">
                     <span className="youtube"><a href="https://www.youtube.com/watch?v=jyJZ211wQuM" target='_blank'><img src={youtube}/></a></span>
-                    {/* <span className="youtube"><a href="https://www.youtube.com/watch?v=jyJZ211wQuM" target='_blank'><img src={process.env.PUBLIC_URL + './img/instagram.png'}/></a></span> */}
                     <span className="instagram"><a href="https://www.instagram.com/gyeongbokgung_palace_official/" target='_blank'><img src={insta}/></a></span>
                 </div>
                 <p className="copy">Copyright(c) 2023 Gyeongbokgung Night Trip. All right reserved</p>

@@ -1,25 +1,118 @@
-.Sticky_nav{
-    background-color: rgba(0,0,0,0.4);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 10px 50px;
-    z-index: 9999;
+.stickyHead{
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+.headerLogo{
+  width: 70px;
+  height: 70px;
+}
+.stickyHead>ul{
+  display: flex;
+}
+.stickyHead li{
+  margin: 0 25px;
+  font-size: 18px;
+}
+.headRight{
+  display: flex;
+  align-items: center;
+}
+.loginIcon{
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+.hamMenu{
+  width: 35px;
+  margin-left: 20px;
+  display: none;
+  cursor: pointer;
+}
+.hamMenu>div{
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  transition: all 1s;
+}
+.hamMenu>div:last-child{
+  margin: 0;
+}
+.openHam{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 90px;
+  right: -1000px ;
+  transition: all 1.5s;
+  background-color: #000;
+  z-index: 9999;
+  display: none;
+  opacity: 0;
+  padding: 10px 40px;
+}
+.openHam>div{
+  padding: 40px 0;
+  border-top: 1px solid #fff;
+  cursor: pointer;
+}
+.openHam>div:last-child{
+  border-bottom: 1px solid #fff;
+}
+.clickOpen{
+  right: 0;
+  opacity: 1;
+}
+.openTopHam{
+  position: relative;
+  top: 12px;
+  rotate: 45deg;
+}
+.openCenterHam{
+  opacity: 0;
+}
+.openbotHam{
+  position: relative;
+  top: -12px;
+  rotate: -45deg;
+}
+@media (max-width:1500px) { 
+  .stickyHead li{
+    font-size: calc(100vw * (18 / 1500));
   }
-  .LOGO{
-    /* background: url(../img/Logo_white.png); */
-    background: url(../../public/img/Logo_white.png);
-    background-size: cover;
-    width: 100px;
-    height: 100px;
+  .openHam{
+    display: none;
   }
-  .Sticky_nav>ul{
-    display: flex;
-    list-style: none;
+}
+@media (max-width:1024px) { 
+  .stickyHead{
+    padding: 10px 20px;
   }
-  .Sticky_nav li{
-    margin: 0 25px;
+  .stickyHead li{
+    font-size: calc(100vw * (16 / 1024));
+    margin: 0 20px;
   }
+  .openHam{
+    display: none;
+  }
+}
+@media (max-width: 820px) { 
+  .stickyHead{
+    padding: 10px 10px;
+  }
+  .stickyHead>ul{
+    display: none;
+  }
+  .hamMenu{
+    display: block;
+  }
+  .openHam{
+    display: block;
+  }
+  
+}

@@ -49,20 +49,12 @@ const Section3 = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  // function flip(e) {
-  //   e.currentTarget.style.transform = 'rotateY(180deg)';
-  // }
-  // const flip2 = (e) => {
-  //   e.currentTarget.style.transform = 'rotateY(0deg)';
-  // };
   const cardContents = [
     "'아티스트가 사랑한 궁'은 아티스트와 함께 궁궐의 아름다움을 전하는 초청공연입니다. 가을밤, 특별한 선율이 흐르는 경복궁 집옥재로 여러분을 초대합니다.",
     "판소리로 듣는 궁 이야기'는 세워지고 무너지고, 세워지고 무너지기를 반복하는 궁의 끈질긴 생명력과 그것을 기억하는 이들에 대한 이야기를 담은 창작 판소리 공연입니다.",
     "하루 2번 경복궁에서 왕가와 함께하는 특별한 산책이 펼쳐집니다. 왕과 왕비, 왕세자와 세자빈과 함께 걸으며 조선시대 궁궐의 일상을 즐겨보세요.",
     "조선왕조실록의 내용을 토대로 실제 임금이 드셨던 궁중병과와 궁중약차를 오늘날에도 즐길 수 있도록 구성된 체험 프로그램입니다.",
   ];
-
   return (
     <section className="section3 w1500" ref={section3Ref} >
       <article className="sticky">
@@ -84,5 +76,4 @@ const Section3 = () => {
     </section>
   );
 };
-
 export default Section3;
