@@ -1,0 +1,43 @@
+.Section4_announcement1{
+    width: 100%;
+ }
+ .w1500{
+     width: 1500px;
+     margin: 0 auto;
+ }
+ p{
+     padding: 5px;
+     font-size: 18px;
+ }
+ .section4SubHeader{
+     padding: 231px 600px 200px 600px;
+  }
+  .section4SubHeader>img{
+     width: 300px;
+     height: 200px;
+     background-size:cover;
+  }
+  .section4SubHeader>h2{
+     margin-top: 50px;
+     font-size: 40px; 
+     text-align: center;
+  }
+  .Section4_announcementBtns{
+    width: 425px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 1px solid white;
+  }
+ .Section4_announcementBtns > ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ }
+ .Section4_announcementBtns > ul li{
+    width: 140px;
+    height: 65px;
+    font-size: 18px;
+    padding: 20px 30px;
+    
+ }

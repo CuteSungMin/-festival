@@ -204,6 +204,9 @@ p {
     height:calc(534px * 0.7);
     top:200px;
   }
+  .programMoreBtn {
+    margin-top: 235px;
+  }
 }
 
 
@@ -212,9 +215,9 @@ p {
   .programH1 {font-size: calc(100vw * (80/1500));}
   .programH2 {margin-top: 70px; font-size: calc(100vw * (30/1024));}
   .programImgbox img{height:328px;}
-  .sticky2{height:595px; top:225px;}
-  .slide{display: block;}
+  .sticky2{height:650px; top:225px;}
+  .slide{display: block; margin-top: 50px;}
   .section2Aticle{margin-top: 20px; width: 100%;}
-  .programMoreBtn {margin-top: 483px;}
-  .stickyBox{height: 300vh;}
+  .programMoreBtn {margin-top: 535px;}
+  .stickyBox{height: 300vh; }
 }

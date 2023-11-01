@@ -8,6 +8,8 @@ import Section2 from './component/section2'
 import Section3 from './component/section3'
 import Section4 from './component/section4'
 import Section2_subPage from "./page/section2_subPage";
+import Section4_announcement1 from "./page/section4_announcement1";
+import Section5_subPage from "./page/section5_subPage";
 import Header from "./component/header"
 import Top from "./component/top"
 
@@ -27,6 +29,8 @@ function App() {
         <Section3/>
         <Section4/>
         {/* <Section2_subPage /> */}
+        {/* <Section4_announcement1 /> */}
+        {/* <Section5_subPage /> */}
         <Footer />
     </div>
   );
