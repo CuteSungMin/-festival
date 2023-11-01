@@ -30,8 +30,8 @@ function App() {
         <Section3/>
         <Section4/> */}
         {/* <Section2_subPage /> */}
-        {/* <Section4_announcement1 /> */}
-        <Section4_announcement2 />
+        <Section4_announcement1 />
+        {/* <Section4_announcement2 /> */}
         {/* <Section5_subPage /> */}
         <Footer />
     </div>
