@@ -1,7 +1,6 @@
+import '../css/header.css'
 import { Link, useLocation} from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../css/header.css'
-
 
 
 const Header  = () => {
@@ -25,11 +24,11 @@ const Header  = () => {
           <Link to="/Guide"><li>별빛야행 소개</li></Link>
           <Link to="/Program"><li>메인 프로그램</li></Link>
           <Link to="/Event"><li>경복궁 행사</li></Link>
-          <Link to="/Gallery"><li>갤러리</li></Link>
           <Link to="/NoticeList"><li>커뮤니티</li></Link>
+          <Link to="/Gallery"><li>갤러리</li></Link>
         </ul>
         <div className="headRight">
-          <img  alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img>
+          <Link to='/Login'><img alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
           <p>ENG</p>
           <div className='hamMenu' onClick={clickHamMenu}>
             <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
