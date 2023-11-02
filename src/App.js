@@ -25,12 +25,12 @@ function App() {
         </section>
         <Top/>
         <Header/>
-        {/* <Section1/>
+        <Section1/>
         <Section2/>
         <Section3/>
-        <Section4/> */}
+        <Section4/>
         {/* <Section2_subPage /> */}
-        <Section4_announcement1 />
+        {/* <Section4_announcement1 /> */}
         {/* <Section4_announcement2 /> */}
         {/* <Section5_subPage /> */}
         <Footer />
