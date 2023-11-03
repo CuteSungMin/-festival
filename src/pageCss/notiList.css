@@ -46,18 +46,23 @@
 }
 .listTit{
     width: 100%;
-    /* height: 70px; */
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff; */
 }
 .listTit>tr{
     line-height: 70px;
-    /* vertical-align: middle; */
     text-align: center;
-
+}
+.listTit>tr{
+    width: 100%;
+}
+.NewList{
+    background-color: aqua;
+    width: 100%;
+}
+.NewList>a{
+    width: 100% !important;
+    display: inline-block;
+    display: flex;
+    background-color: red;
 }
 .notNum{
     width: 100px;
@@ -68,7 +73,25 @@
 .notName{
     width: 100px;
 }
+.notNum1{
+    width: 100px;
+    display: block;
+}
+.notTit1{
+    width: 60%;
+    display: block;
+}
+.notName1{
+    width: 100px;
+    display: block;
+}
+
 .notDate{
     width: calc(100% - (200px + 60%));
 }
-
+.notDate1{
+    width: calc(100% - (200px + 60%));
+}
+.NewList{
+    width: 100%;
+}
