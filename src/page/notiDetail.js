@@ -38,9 +38,8 @@ const NotiDetail = ({notiData, notiRemove}) => {
                     {/* <p>제목  {notiData[idx].title}</p> */}
                     <p>내용  {notiData[idx].content}</p>
                     <p>작성자  {notiData[idx].userName}</p>
-                    <p>등록일  {notiData[idx].createDate}</p>
+                    <p>등록일  {notiData[idx].createDate.toString}</p>
                 </div>
-
 
                 <div>
                     <button onClick={delFunc}>삭제</button>

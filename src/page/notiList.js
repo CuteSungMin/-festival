@@ -74,13 +74,11 @@ const NotiList = ({notiData}) => {
                         <td>2023-10-18</td>
                     </tr>
                     {notiData.map((notiD)=>
-                        <tr key={notiD.notiId} className='NewList'>
-                            <Link to={`/NoticeList/${notiD.notiId}`}>
-                                <td className='notNum'>{notiD.notiId}</td>
-                                <td className='notTit'>{notiD.title}</td>
-                                <td className='notName'>{notiD.userName}</td>
-                            </Link>
-                            <td className='notDate'>{new Date(notiD.createDate).toLocaleDateString().replace(/\./g, '').replace(/\s/g, '-')}</td>
+                        <tr key={notiD.notiId} className='ddd'>
+                                <td><Link to={`/NoticeList/${notiD.notiId}`}>{notiD.notiId}</Link></td>
+                                <td><Link to={`/NoticeList/${notiD.notiId}`}>{notiD.title}</Link></td>
+                                <td><Link to={`/NoticeList/${notiD.notiId}`}>{notiD.userName}</Link></td>
+                            <td>{new Date(notiD.createDate).toLocaleDateString().replace(/\./g, '').replace(/\s/g, '-')}</td>
                         </tr>
                     )}
                 </table>
@@ -97,9 +95,9 @@ const NotiList = ({notiData}) => {
                     )}
                 </ul> */}
                 <div className='searchBox'>
-                        <input type='text' placeholder='내용 + 제목'></input>
-                        <button onClick={searchFunc}>검색</button>
-                    </div>
+                    <input type='text' placeholder='내용 + 제목'></input>
+                    <button onClick={searchFunc} className='searchBtn'>검색</button>
+                </div>
             </article>
         </section>
      );

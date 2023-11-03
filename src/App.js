@@ -16,11 +16,11 @@ import Section3_subPage from "./page/section3_subPage";
 import NotiList from "./page/notiList";
 import NotiDetail from "./page/notiDetail";
 import NotiWrite from "./page/notiWrite";
-import NotFound from './page/notiFound';
+import NotFound from './page/notFound';
 
 function App() {
   const [notiData, setNotiData] = useState([]);
-  const dataId = useRef(0);
+  const dataId = useRef(1);
   
   const notiCreate= (title,userName,content) =>{
     const createDate= new Date().getTime();
