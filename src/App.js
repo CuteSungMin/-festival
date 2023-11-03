@@ -13,7 +13,9 @@ import Section2_subPage from "./page/section2_subPage";
 import Section3_subPage from "./page/section3_subPage";
 import Section4_announcement1 from "./page/section4_announcement1";
 import Section4_announcement2 from "./page/section4_announcement2";
+import Section4_FAQ from "./page/section4_FAQ";
 import Section5_subPage from "./page/section5_subPage";
+import SignUp from "./page/SignUp";
 
 function App() {
   return(
@@ -26,8 +28,9 @@ function App() {
           <Route path="/Event" element={<><Header/><Section3_subPage/></>}/>
           <Route path="/NoticeList" element={<><Header/><Section4_announcement1 /></>}/>
           <Route path="/NoticeWrite" element={<><Header/><Section4_announcement2 /></>}/>
-          <Route path="/FAQ" element={<></>}/>
+          <Route path="/FAQ" element={<><Header/><Section4_FAQ/></>}/>
           <Route path="/Gallery" element={<><Header/><Section5_subPage/></>}/>
+          <Route path="/SignUp" element={<><Header/><SignUp/></>}/>
           <Route path="/Login" element={<></>}/>
           <Route path="/Join" element={<></>}/>
         </Routes>

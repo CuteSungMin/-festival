@@ -243,8 +243,6 @@ p {
   }
   .programH1 {font-size: calc(100vw * (80/1500));}
   .programH2 {margin-top: 70px; font-size: calc(100vw * (30/1024));}
-  
-
 }
 @media (max-width:820px) {
   

@@ -1,0 +1,117 @@
+.SignUp{
+    width: 100%;
+    padding: 0px 0px 300px 0px;
+    font-size: 20px;
+ }
+ .w1500{
+     width: 1500px;
+     margin: 0 auto;
+    
+ }
+ p{
+     padding: 5px;
+     font-size: 18px;
+ }
+ .SignUpHeader{
+     padding: 100px 0px 50px 0px;
+     margin: 0 auto;
+     text-align: center;
+  }
+  .SignUpHeader::after{
+    position: absolute;
+    width: 200%;
+    bottom: 400px;
+    left: -200px;
+    content: "";
+    border-bottom: 1px solid white;
+}
+
+  .SignUpHeader>img{
+     width: 300px;
+     height: 200px;
+     background-size:cover;
+  }
+  .SignUpHeader>h2{
+     margin-top: 50px;
+     font-size: 40px; 
+     text-align: center;
+  }
+  .titBox2{
+    padding: 200px 0px 30px;
+    border-bottom: 1px solid white;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .SignUpMain{
+    display: flex;
+    padding: 60px 0px 100px 0px;
+  }
+  input{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid white;
+    font-size: 20px;
+    width: 275px;
+    height: 43px;
+    margin-right: 10px;
+    transform: translateY(-2px);
+  }
+  button{
+    display: inline-block;
+    padding: 7px 24px;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid white;
+    font-size: 20px;
+  }
+  label{
+    display: block;
+    padding: 13px 0px 30px 40px;
+    border: 1px solid red;
+  }
+  label:nth-of-type(2){
+    padding-bottom: 60px;
+  }
+  label:nth-of-type(3){
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+  }
+  .labelBox{
+    width: 250px;
+    flex-direction: column;
+  }
+  .inputBox{
+    margin-left: 130px;
+    
+  }
+  input::placeholder{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  .inputDiv{
+    margin-bottom: 30px;
+ 
+  }
+  .inputDiv>p{
+    margin-top: 12px;
+    font-size: 13px;
+    color: #FF143C;
+  }
+  input[type='radio'] {
+    appearance: none;
+    background-color: #ffffff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    opacity: 30%;
+    margin: 10px;
+    border: none;
+      &:checked {
+        opacity: 1;
+      }
+}
