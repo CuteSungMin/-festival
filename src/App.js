@@ -1,5 +1,6 @@
 import "./App.css";
 import "./css/reset.css";
+// import { useTranslation, Trans } from 'react-i18next';
 import { Routes, Route } from 'react-router-dom'
 import { useState, useRef, useEffect} from "react";
 import LoadingImg from './img/mainText2.png'
@@ -12,7 +13,7 @@ import Main from "./component/main"
 //Pages
 import Section1_subPage from "./page/section1_subPage";
 import Section2_subPage from "./page/section2_subPage";
-import Section3_subPage from "./page/section3_subPage";
+import Section3_subPage from './page/section3_subPage';
 import Section5_subPage from "./page/section5_subPage";
 import NotFound from './page/notFound';
 
@@ -51,6 +52,8 @@ function App() {
       setLodingPage(false);
     },2500)
   })
+  
+
   return(
     <div className="loadingWrap">
       {LodingPage ? (
@@ -72,7 +75,7 @@ function App() {
           <Route path="/Guide" element={<><Header/><Section1_subPage/></>}/>
           <Route path="/Program" element={<><Header/><Section2_subPage/></>}/>
           <Route path="/Event" element={<><Header/><Section3_subPage/></>}/>
-          <Route path="/NoticeList" element={<><Header/><NotiList notiData={notiData}/></>}/>
+          <Route path="/NoticeList" element={<><Header/><NotiList notiData={notiData} /></>}/>
           <Route path="/NoticeList/:idx" element={<><Header/><NotiDetail notiData={notiData} notiRemove={notiRemove}/></>}/>
           <Route path="/NoticeWrite" element={<><Header/><NotiWrite notiCreate={notiCreate}/></>}/>
           <Route path="/FAQ" element={<><Header/></>}/>

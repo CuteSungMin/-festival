@@ -33,7 +33,11 @@ const Header  = () => {
           </ul>
           <div className="headRight">
             <Link to="/Login"><img  alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
-            <p>ENG</p>
+            {/* <p>ENG</p> */}
+            <select className='lang'>
+              <option value='kor'>kor</option>
+              <option value='eng'>eng</option>
+            </select>
             <div className='hamMenu' onClick={clickHamMenu}>
               <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
               <div className={`centerHamMenu ${hamMenuOpen ? "openCenterHam" : ""}`}></div>

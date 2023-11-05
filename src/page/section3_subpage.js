@@ -5,7 +5,7 @@ import Sub3Event2 from '../img/event2.jpg'
 import Sub3Event3 from '../img/event3.png'
 import Sub3Event4 from '../img/event4.jpg'
 
-const Section3_subpage = () => {
+const Section3_subPage = () => {
 
     return ( 
         <section>
@@ -187,4 +187,4 @@ const Section3_subpage = () => {
      );
 }
  
-export default Section3_subpage;
+export default Section3_subPage;

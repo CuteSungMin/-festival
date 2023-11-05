@@ -23,12 +23,14 @@ const Footer = () => {
             top: `5300`,
             behavior: `smooth`
         })
+
     }
     const ClickCommunity = ()=>{
         window.scrollTo({
             top: `9200`,
             behavior: `smooth`
         })
+
     }
     const ClickGallery = ()=>{
         window.scrollTo({
@@ -36,6 +38,7 @@ const Footer = () => {
             behavior: `smooth`
         })
     }
+    
     return ( 
         <footer className='w1500'>
             <div className='footerLeft'>
