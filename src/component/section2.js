@@ -6,8 +6,10 @@ import programImg2 from '../img/img2.jpg';
 import programImg3 from '../img/img3.jpg';
 import programImg4 from '../img/img4.jpg';
 import { useRef,useEffect,useState } from 'react';
-
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
 const Section2 = () => {
+    const { t } = useTranslation();
 
     const [isSlideUp1, setSlideUp1] = useState(true);
     const [isSlideUp2, setSlideUp2] = useState(true);
@@ -67,7 +69,7 @@ const Section2 = () => {
                 <div className="stickyBox">
                     <div className="sticky2">
                         <h1 className="programH1">경복궁 프로그램</h1>
-                        <Link to="/Program"><button className="programMoreBtn">더보기</button></Link>
+                        <Link to="/Program"><button className="programMoreBtn">{t('btn')}</button></Link>
                         <div className={`slideBox
                            ${isSlideUp1 ? 'slideBox' : 'up1'}
                            ${isSlideUp2 ? 'slideBox' : 'up2'}

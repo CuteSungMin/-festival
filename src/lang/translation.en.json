@@ -1,10 +1,34 @@
 {
     "header":{
-        "menu1":"introduce",
-        "menu2":"main program",
-        "menu3":"event",
-        "menu4":"community",
-        "menu5":"gallery"
+        "menu1":"Gyeongbokgung Starlight Tour",
+        "menu2":"Programs",
+        "menu3":"Event",
+        "menu4":"Community",
+        "menu5":"Gallery"
+    },
+    "sec1":{
+        "title":"Gyeongbokgung Starlight Tour",
+        "cnt1":"The door to the deepest part of Gyeongbokgung Palace opens",
+        "cnt2":"Enjoy royal food experience and traditional performances in the Oeso kitchen",
+        "cnt3":"Go on a starlight walk with a professional commentator",
+        "box1_1":"2023 Gyeongbokgung Starlight Tour",
+        "box2_1":"From Sep. 08, 2023 to Nov. 13, 2023",
+        "box3_1":"Gyeongbokgung Palace, Sojubang, and the northern palace area",
+        "box5_1":"Starlight Walk, Doseok Surasang, Food Composition"
+    },
+    "btn":"VIEWMORE",
+    "sec2":{
+        "title":"Gyeongbokgung Program",
+        "box1":"Royal cuisine Experience",
+        "box1_1":"You will stop by the palace's kitchen, 'Sojubang', and taste the 12 dishes that the king of Joseon ate",
+        "box2":"Korean traditional music performance",
+        "box2_1":"맛있는 수라상을 먹는 동안 국악공연이 함께 펼쳐져 맛과 멋의 풍류로 가득한 밤이 될 것입니다",
+        "box3":"야간해설탐방",
+        "box3_1":"경복궁 북측 권역을 탐방하며, 복원을 완료한 향원정을 고즈넉한 분위기에서 감상하실 수 있습니다",
+        "box4":"한복무료관람",
+        "box4_1":"전통한복, 생활한복  모두 무료관람 대상. 상의(저고리)와 하의(치마, 바지)를 기본으로  함"
+
     }
+
     
 }

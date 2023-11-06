@@ -4,6 +4,8 @@ import Section3 from "./section3";
 import Section4 from './section4';
 import Section5 from './section5'
 import Palace from './palace';
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
 
 const Main = () => {
 

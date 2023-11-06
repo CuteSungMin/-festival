@@ -37,10 +37,10 @@ const Header  = () => {
           <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
           <ul>
             <Link to="/Guide"><li>{t('header.menu1')}</li></Link>
-            <Link to="/Program"><li>메인 프로그램</li></Link>
-            <Link to="/Event"><li>경복궁 행사</li></Link>
-            <Link to="/Gallery"><li>갤러리</li></Link>
-            <Link to="/NoticeList"><li>커뮤니티</li></Link>
+            <Link to="/Program"><li>{t('header.menu2')}</li></Link>
+            <Link to="/Event"><li>{t('header.menu3')}</li></Link>
+            <Link to="/NoticeList"><li>{t('header.menu4')}</li></Link>
+            <Link to="/Gallery"><li>{t('header.menu5')}</li></Link>
           </ul>
           <div className="headRight">
             <Link to="/Login"><img alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
