@@ -8,6 +8,7 @@ import Top from "./component/top"
 import Header from "./component/header"
 import Footer from "./component/footer";
 import Main from "./component/main"
+import { withTranslation } from "react-i18next";
 
 //Pages
 import Section1_subPage from "./page/section1_subPage";
@@ -26,6 +27,7 @@ import Login from "./joinPage/login";
 
 
 function App() {
+  
   const [notiData, setNotiData] = useState([]);
   const dataId = useRef(0);
   const notiCreate= (title,userName,content) =>{

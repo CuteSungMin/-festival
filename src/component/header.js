@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../css/header.css'
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
 
 const Header  = () => {
   //public에 있는 이미지 가져 올 수 있는 함수
@@ -19,21 +21,32 @@ const Header  = () => {
   useEffect(()=>{
     window.scrollTo(0,0)
   })
+  const { t } = useTranslation();
+  const onChangeLang = () => {
+    i18n.language === "ko"
+      ? i18n.changeLanguage("en")
+      : i18n.changeLanguage("ko");
+  };
 
     return (
+
       <header className="stickyHead">
         <div className='stickyWebNav'>
           <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
           <ul>
-            <Link to="/Guide"><li>별빛야행 소개</li></Link>
+            <Link to="/Guide"><li>{t('menu1')}</li></Link>
             <Link to="/Program"><li>메인 프로그램</li></Link>
             <Link to="/Event"><li>경복궁 행사</li></Link>
             <Link to="/Gallery"><li>갤러리</li></Link>
             <Link to="/NoticeList"><li>커뮤니티</li></Link>
           </ul>
           <div className="headRight">
-            <Link to="/Login"><img  alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
-            <p>ENG</p>
+            <Link to="/Login"><img alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
+            {/* <select className='lang'>
+              <option value='kor'>kor</option>
+              <option value='eng'>eng</option>
+            </select> */}
+            <button onClick={() => onChangeLang()}>언어변경</button>
             <div className='hamMenu' onClick={clickHamMenu}>
               <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
               <div className={`centerHamMenu ${hamMenuOpen ? "openCenterHam" : ""}`}></div>
@@ -61,5 +74,6 @@ const Header  = () => {
         </div>
       </header>
      );
+    
 }
-export default Header;
+export default withTranslation()(Header);

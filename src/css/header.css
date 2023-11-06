@@ -89,6 +89,9 @@
   top: -12px;
   rotate: -45deg;
 }
+.lang{
+  background: none;
+}
 @media (max-width:1500px) { 
   .stickyWebNav li{
     font-size: calc(100vw * (18 / 1500));
