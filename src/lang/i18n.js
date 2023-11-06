@@ -23,7 +23,7 @@ i18n
     debug: true,
     defaultNS: "translation",
     ns: "translation",
-    keySeparator: false,
+    keySeparator: ".",
     interpolation: {
       escapeValue: false,
     },

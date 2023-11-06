@@ -22,11 +22,13 @@ const Header  = () => {
     window.scrollTo(0,0)
   })
   const { t } = useTranslation();
-  const onChangeLang = () => {
-    i18n.language === "ko"
-      ? i18n.changeLanguage("en")
-      : i18n.changeLanguage("ko");
-  };
+  // const onChangeLang = () => {
+  //   i18n.language === "ko"
+  //     ? i18n.changeLanguage("en")
+  //     : i18n.changeLanguage("ko");
+  // };
+  const changelanguageToKo = () => i18n.changeLanguage('ko')
+  const changelanguageToEn = () => i18n.changeLanguage('en')
 
     return (
 
@@ -34,7 +36,7 @@ const Header  = () => {
         <div className='stickyWebNav'>
           <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
           <ul>
-            <Link to="/Guide"><li>{t('menu1')}</li></Link>
+            <Link to="/Guide"><li>{t('header.menu1')}</li></Link>
             <Link to="/Program"><li>메인 프로그램</li></Link>
             <Link to="/Event"><li>경복궁 행사</li></Link>
             <Link to="/Gallery"><li>갤러리</li></Link>
@@ -46,7 +48,9 @@ const Header  = () => {
               <option value='kor'>kor</option>
               <option value='eng'>eng</option>
             </select> */}
-            <button onClick={() => onChangeLang()}>언어변경</button>
+            <button onClick={changelanguageToKo}>Korean</button>
+              <button onClick={changelanguageToEn}>English</button>  
+            {/* <button onClick={() => onChangeLang()}>언어변경</button> */}
             <div className='hamMenu' onClick={clickHamMenu}>
               <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
               <div className={`centerHamMenu ${hamMenuOpen ? "openCenterHam" : ""}`}></div>
