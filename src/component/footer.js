@@ -2,8 +2,11 @@ import "../css/footer.css";
 import {Link, useLocation} from 'react-router-dom';
 import youtube from '../img/icon_sns4.png';
 import insta from '../img/icon_sns3.png';
+import { withTranslation,useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     const locationSection = useLocation();
 
     const ClickGuide = ()=>{
@@ -41,8 +44,8 @@ const Footer = () => {
             <div className='footerLeft'>
                 <Link to="/"><div className='logo'><img src={process.env.PUBLIC_URL + './img/Logo_white.png'}/></div></Link>
                 <div className="tel">
-                    <p><span>주소</span>(06153) 서울특별시 강남구 봉은사로 406 (삼성동 112-2)</p>
-                    <p><span>전화번호</span>(02) 566-6300 </p>
+                    <p><span>{t('footer.addr')}</span>{t('footer.addr_cnt')}</p>
+                    <p><span>{t('footer.tel')}</span>(02) 566-6300 </p>
                 </div>
                 <div className="sns">
                     <span className="youtube"><a href="https://www.youtube.com/watch?v=jyJZ211wQuM" target='_blank'><img src={youtube}/></a></span>
@@ -53,11 +56,11 @@ const Footer = () => {
             <ul className='fnb'>
                 {locationSection.pathname === '/' && (
                 <>
-                <li onClick={ClickGuide}>별빛야행 소개</li>
-                <li onClick={ClickProgram}>메인 프로그램</li>
-                <li onClick={ClickEvent}>경복궁 행사</li>
-                <li onClick={ClickCommunity}>커뮤니티</li>
-                <li onClick={ClickGallery}>갤러리</li>
+                <li onClick={ClickGuide}>{t('footer.sec1')}</li>
+                <li onClick={ClickProgram}>{t('footer.sec2')}</li>
+                <li onClick={ClickEvent}>{t('footer.sec3')}</li>
+                <li onClick={ClickCommunity}>{t('footer.sec4')}</li>
+                <li onClick={ClickGallery}>{t('footer.sec5')}</li>
                 </>
                 )}
             </ul>

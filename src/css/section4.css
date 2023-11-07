@@ -45,7 +45,7 @@
         margin: 0 auto;
     }
     .section4 { width: 90%;}
-    h1 {margin: 0px 25%; font-size: calc(100vw * (80/1500));}
+    /* h1 {margin: 0px 25%; font-size: calc(100vw * (80/1500));} */
    .notice p {font-size: 18px;}
    .flex{display: block;}
    .section4Aticle{width: 100%; text-align: center;}

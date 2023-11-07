@@ -12,10 +12,15 @@ import { useEffect,useRef,useState,useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
+
 
 
 const {kakao} = window;
 const Section1_supPage = () => {
+    const { t } = useTranslation();
+
     useEffect(() => {
         AOS.init();
       })
@@ -51,7 +56,7 @@ const Section1_supPage = () => {
       }
     }, [navigator.geolocation.getCurrentPosition]);
   
-    // 카카오지도 API 가져오기
+    // 카카오지도  API 가져오기
     const kakaoMap = () => {
       const container = document.getElementById("map");
       const options = {
@@ -94,39 +99,41 @@ const Section1_supPage = () => {
                     <ul>
                         <li>
                             <b>
-                                <span>행</span>
-                                <span>사</span>
-                                <span>명</span>
+                            {i18n.language === "ko" ? 
+                            (<><span>행</span><span>사</span><span>명</span></>)
+                            :(<><span>Festival name</span></>)}
                             </b>
-                            <span>2023 경복궁 별빛야행</span>
+                            <span>{t('sec1.box1_1')}</span>
                         </li>
                         <li>
                             <b>
-                                <span>기</span>
-                                <span>간</span>
+                            {i18n.language === "ko" ? 
+                            (<><span>기</span><span>간</span></>)
+                            :(<><span>Period</span></>)}
                             </b>
-                            <span>2023.10.11(수) ~ 11.13</span>
+                            <span>{t('sec1.box2_1')}</span>
                         </li>
                         <li>
                             <b>
-                                <span>장</span>
-                                <span>소</span>
+                            {i18n.language === "ko" ? 
+                            (<><span>장</span><span>소</span></>)
+                            :(<><span>Venue</span></>)}
                             </b>
-                            <span>경복궁 내</span>
+                            <span>{t('sec1.box3_1')}</span>
                         </li>
                         <li>
                             <b>
-                                <span>주</span>
-                                <span>최</span>
+                            {i18n.language === "ko" ? 
+                            (<><span>행</span><span>사</span><span>문</span><span>의</span></>)
+                            :(<><span>Contact</span></>)}
                             </b>
-                            <span>문화재청 궁능유적본부 경복궁 관리소</span>
+                            <span>1522-2295</span>
                         </li>
                         <li>
                             <b>
-                                <span>프</span>
-                                <span>로</span>
-                                <span>그</span>
-                                <span>램</span>
+                            {i18n.language === "ko" ? 
+                            (<><span>프</span><span>로</span><span>그</span><span>램</span></>)
+                            :(<><span>Programs</span></>)}
                             </b>
                             <span>궁중음식 체험, 국악공연 관람, 야간해설 탐방</span>
                         </li>
