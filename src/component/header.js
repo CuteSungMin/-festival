@@ -1,61 +1,84 @@
-import { Link, useLocation} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../css/header.css'
-
-
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
 
 const Header  = () => {
   //public에 있는 이미지 가져 올 수 있는 함수
   const imgUrl = process.env.PUBLIC_URL
+  //메뉴바 토글
   const [hamMenuOpen, setHamMenuOpen] = useState(false)
   const clickHamMenu = ()=>{
     setHamMenuOpen(!hamMenuOpen)
   }
 
+  const closeHamMenu = ()=>{
+    setHamMenuOpen(false)
+  }
+
   // Link 눌렀을 때 다른페이지에서 Top 0 시작
-  const location = useLocation()
   useEffect(()=>{
     window.scrollTo(0,0)
-  },[location])
+  })
+  const { t } = useTranslation();
+  // const onChangeLang = () => {
+  //   i18n.language === "ko"
+  //     ? i18n.changeLanguage("en")
+  //     : i18n.changeLanguage("ko");
+  // };
+  const changelanguageToKo = () => i18n.changeLanguage('ko')
+  const changelanguageToEn = () => i18n.changeLanguage('en')
 
     return (
+
       <header className="stickyHead">
-        <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
-        <ul>
-          <Link to="/Guide"><li>별빛야행 소개</li></Link>
-          <Link to="/Program"><li>메인 프로그램</li></Link>
-          <Link to="/Event"><li>경복궁 행사</li></Link>
-          <Link to="/Gallery"><li>갤러리</li></Link>
-          <Link to="/NoticeList"><li>커뮤니티</li></Link>
-        </ul>
-        <div className="headRight">
-          <img  alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img>
-          <p>ENG</p>
-          <div className='hamMenu' onClick={clickHamMenu}>
-            <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
-            <div className={`centerHamMenu ${hamMenuOpen ? "openCenterHam" : ""}`}></div>
-            <div className={`botHamMenu ${hamMenuOpen ? "openbotHam" : ""}`}></div>
+        <div className='stickyWebNav'>
+          <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
+          <ul>
+            <Link to="/Guide"><li>{t('header.menu1')}</li></Link>
+            <Link to="/Program"><li>{t('header.menu2')}</li></Link>
+            <Link to="/Event"><li>{t('header.menu3')}</li></Link>
+            <Link to="/NoticeList"><li>{t('header.menu4')}</li></Link>
+            <Link to="/Gallery"><li>{t('header.menu5')}</li></Link>
+
+          </ul>
+          <div className="headRight">
+            <Link to="/Login"><img alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
+            {/* <select className='lang'>
+              <option value='kor'>kor</option>
+              <option value='eng'>eng</option>
+            </select> */}
+            <button onClick={changelanguageToKo}>Korean</button>
+              <button onClick={changelanguageToEn}>English</button>  
+            {/* <button onClick={() => onChangeLang()}>언어변경</button> */}
+            <div className='hamMenu' onClick={clickHamMenu}>
+              <div className={`topHamMenu ${hamMenuOpen ? "openTopHam" : ""}`}></div>
+              <div className={`centerHamMenu ${hamMenuOpen ? "openCenterHam" : ""}`}></div>
+              <div className={`botHamMenu ${hamMenuOpen ? "openbotHam" : ""}`}></div>
+            </div>
           </div>
         </div>
         {/* 오른쪽에서 나오는 햄버거 메뉴임 */}
         <div className={`openHam ${hamMenuOpen ? "clickOpen" : ""}`}>
           <div>
-            <p>별빛야행 소개</p>
+          <Link to="/Guide" onClick={closeHamMenu}><p>별빛야행 소개</p></Link>
           </div>
           <div>
-            <p>메인 프로그램 소개</p>
+          <Link to="/Program" onClick={closeHamMenu}><p>메인 프로그램</p></Link>
           </div>
           <div>
-            <p>관련 행사 소개</p>
+          <Link to="/Event" onClick={closeHamMenu}><p>경복궁 행사</p></Link>
           </div>
           <div>
-            <p>갤러리</p>
+          <Link to="/Gallery" onClick={closeHamMenu}><p>갤러리</p></Link>
           </div>
           <div>
-            <p>커뮤니티</p>
+          <Link to="/NoticeList" onClick={closeHamMenu}><p>커뮤니티</p></Link>
           </div>
         </div>
       </header>
      );
+    
 }
-export default Header;
+export default withTranslation()(Header);

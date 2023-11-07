@@ -9,7 +9,7 @@ const SignUp = () => {
                <div className='w1500'>
                     <div className='SignUpHeader'>
                         <div><img src={headerImg}></img></div>
-                        <h2>회원가입</h2>
+                        <h2></h2>
                     </div>
                     <h3 className='titBox2'>회원가입</h3>
                     <div className='SignUpMain'>

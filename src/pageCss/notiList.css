@@ -1,0 +1,114 @@
+.tabWrap{
+    text-align: center;
+    /* margin-top: 150px; */
+    margin: 150px 0 80px;
+}
+.tabWrap>nav{
+    position: relative;
+    width: 480px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+.tabWrap>nav>ul{
+    display: flex;
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    height: 100%;
+    margin: 0 auto;
+}
+.tabWrap>nav>ul a{
+    width: calc(100% / 3 + 2px);
+    height: 100%;
+    font-size: 18px;
+    padding: 20px 30px;
+}
+.listTit{
+    width: 100%;
+    table-layout: fixed; 
+    border-top: 1px solid #888;  
+    margin-bottom: 50px; 
+}
+.listTit>colgroup{
+    display: table-column-group;
+}
+.listTit>tr{
+    line-height: 70px;
+    text-align: center;
+    border-bottom: 1px solid #888;
+}
+.listTit>tr{
+    width: 100%;
+}
+.listTit td{
+    white-space: nowrap;
+}
+.listTit th{
+    white-space: nowrap;
+
+}
+.notNum{
+    width: 100px;
+}
+.notTit{
+    width: 60%;
+}
+.notName{
+    width: 100px;
+}
+.notDate{
+    width: calc(100% - (200px + 60%));
+}
+.listTit a{
+    width: 100%;
+    display: inline-block;
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    margin-bottom: 300px;
+}
+.searchBox>input{
+    border: 1px solid #fff;
+    width: 220px; height: 40px;
+    padding: 10px;
+}
+.searchBtn{
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+}
+@media (max-width:768px) {
+    .listTit>tr>td:first-child{
+        display: none;
+    }
+    .listTit>tr>th:first-child{
+        display: none;
+    }
+    .listTit>tr>td:nth-child(2){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .notNum{
+        display: none;
+    }
+    .notTit{
+        width: calc(100% - 150px);
+    }
+    .notName{
+        width: 100px;
+    }
+    .notDate{
+        width: 50px;
+    }
+    .listTit>tr>td:last-child{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
