@@ -8,6 +8,7 @@
         "btn":"ENG"
     },
     "sec1":{
+        "main":"Overview",
         "title":"Gyeongbokgung Starlight Tour",
         "cnt1":"The door to the deepest part of Gyeongbokgung Palace opens",
         "cnt2":"Enjoy royal food experience and traditional performances in the Oeso kitchen",
@@ -57,6 +58,41 @@
         "addr":"Addr",
         "addr_cnt":"406, Bongeunsa-ro, Gangnam-gu, Seoul, Republic of Korea",
         "tel":"Tel"
+    },
+    "sub1":{
+        "slg":"2023 Gyeongbokgung Starlight Tour",
+        "slg1":"A festival that will heat up the night of Seoul and show Seoul, a cultural attraction city that makes citizens together",
+        "slg2":"We invite you on a month-long journey that will take you one step further as Seoul's representative culture and arts festival where everyone can enjoy together",
+        "tit":"Gyeongbokgung",
+        "tit1":"Festival"
+    },
+    "sub2":{
+        "tit":"Festival Schedule",
+        "tit1":"[2023 Autumn Palace Culture Festival] The palace loved by artists",
+        "add1":"Jibokjae",
+        "tit2":"[2023 Autumn Palace Culture Festival] The Palace Story in Pansori",
+        "add2":"Heungbogjeon",
+        "tit3":"Reproduction and experience of daily life in the palace",
+        "add3":"Gangnyeongjeon Hall of Gyeongbokgung Palace",
+        "tit4":"2023 Gyeongbokgung Palace's Life and Breakfast (Half of the Year)",
+        "add4":"SaengGwabang",
+        "tit5":"2023 Gyeongbokgung Starlight Tour(Half of the Year)",
+        "add5":"Gyeongbokgung"
+
+    },
+    "sub3":{
+        "map":"Location",
+        "tit":"Public Transportation Guidance",
+        "trnsp":"Subway",
+        "way1":"Line 3",
+        "way1_1":"Exit 1 of Anguk Station on Line 3, 13 minutes walk",
+        "way2":"Line 5",
+        "way2_1":"Exit 2 of Gwanghwamun Station on Line 5, 14 minutes walk",
+        "way3":"Line 3",
+        "way3_1":"Exit 4 of Gyeongbokgung Station on Line 3, 16 minutes walk",
+        "trnsp1":"Bus",
+        "b1":"Shuttle",
+        "b1_1":"Jongno Bus No. 11 Beopryosa Station"
     }
 
     
