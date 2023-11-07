@@ -25,7 +25,7 @@ p{
     bottom: 0;
     left: -200px;
     content: "";
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #888;
 }
 .section2SubHeader>img{
    width: 300px;

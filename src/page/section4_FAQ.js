@@ -3,6 +3,7 @@ import headerImg from '../img/headerImg.png';  // 이미지 파일 경로를 가
 import iconQ from '../img/Q.png';  // 이미지 파일 경로를 가져옵니다.
 import iconA from '../img/A.png';  // 이미지 파일 경로를 가져옵니다.
 import { useRef, useEffect, useState } from 'react';  // React 라이브러리에서 useRef, useEffect, useState를 가져옵니다.
+import { Link } from 'react-router-dom';
 
 const Section4_FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);  // 활성화된 아코디언 인덱스를 저장하는 상태
@@ -45,18 +46,22 @@ const Section4_FAQ = () => {
     useEffect(() => { 
         // 컴포넌트가 마운트될 때, 마우스 이벤트 리스너를 추가합니다.
 
-        lis.current.forEach((li, index) => {
-            li.addEventListener('mouseover', () => handleMouseOver(index));
-            li.addEventListener('mouseleave', () => handleMouseOver(null)); // 마우스를 떠날 때 null로 설정
-        });
 
-        return () => {
-            // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거합니다.
+        window.onload = function(){
             lis.current.forEach((li, index) => {
-                li.removeEventListener('mouseover', () => handleMouseOver(index));
-                li.removeEventListener('mouseleave', () => handleMouseOver(null));
+                li.addEventListener('mouseover', () => handleMouseOver(index));
+                li.addEventListener('mouseleave', () => handleMouseOver(null)); // 마우스를 떠날 때 null로 설정
             });
-        };
+    
+            return () => {
+                // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거합니다.
+                lis.current.forEach((li, index) => {
+                    li.removeEventListener('mouseover', () => handleMouseOver(index));
+                    li.removeEventListener('mouseleave', () => handleMouseOver(null));
+                });
+            };
+        }
+  
 
     }, []);
 
@@ -70,9 +75,9 @@ const Section4_FAQ = () => {
                 <div className='Section4_announcementBtns'>
                     <ul className='flex2'>
                         {/* 메뉴 항목을 클릭할 때 클래스를 조건부로 설정하여 활성/비활성 스타일을 적용합니다. */}
-                        <li className={isLiOn === 0 ? 'on' : 'off'} ref={(li) => (lis.current[0] = li)}>공지사항</li>
-                        <li className={isLiOn === 1 ? 'on' : 'off'} ref={(li) => (lis.current[1] = li)}>문의하기</li>
-                        <li className={isLiOn === 2 ? 'on' : 'off'} ref={(li) => (lis.current[2] = li)}>FAQ</li>
+                        <Link to='/NoticeList'><li className={isLiOn === 0 ? 'on' : 'off'} ref={(li) => (lis.current[0] = li)}>공지사항</li></Link>
+                        <Link to='/NoticeWrite'><li className={isLiOn === 1 ? 'on' : 'off'} ref={(li) => (lis.current[1] = li)}>문의하기</li></Link>
+                        <Link to='/FAQ'><li className={isLiOn === 2 ? 'on' : 'off'} ref={(li) => (lis.current[2] = li)}>FAQ</li></Link>
                     </ul>
                 </div>    
                 <article className='faqArticle'>

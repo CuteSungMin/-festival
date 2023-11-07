@@ -7,7 +7,9 @@
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 50px;
+    padding: 0;
 }
+
 .subHeadImg{
     width: 300px;
     margin-bottom: 50px;

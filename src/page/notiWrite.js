@@ -67,7 +67,7 @@ const NotiWrite = ({notiCreate}) => {
                         <ul>
                             <Link to='/NoticeList'><li>공지사항</li></Link>
                             <Link to='/NoticeWrite'><li>문의하기</li></Link>
-                            <Link to='/NoticeWrite'><li>FAQ</li></Link>
+                            <Link to='/FAQ'><li>FAQ</li></Link>
                         </ul>
                     </nav>
                 </div>

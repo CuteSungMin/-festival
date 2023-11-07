@@ -8,7 +8,7 @@
      margin: 0 auto;
     
  }
- p{
+ .p{
      padding: 5px;
      font-size: 18px;
  }
@@ -24,7 +24,7 @@
     top: 450px;
     left: -200px;
     content: "";
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #888;
 }
 
   .SignUpHeader>img{
@@ -48,7 +48,7 @@
     display: flex;
     padding: 60px 0px 100px 0px;
   }
-  input{
+  .input{
     background: none;
     outline: none;
     box-shadow: none;
@@ -59,7 +59,7 @@
     margin-right: 10px;
     transform: translateY(-2px);
   }
-  button{
+  .button{
     display: inline-block;
     padding: 7px 24px;
     background: none;
@@ -69,7 +69,7 @@
     font-size: 20px;
     cursor: pointer;
   }
-  button:hover{
+  .button:hover{
     background-color: rgba(0, 0, 0, 0.8);
   }
   label{
@@ -126,7 +126,7 @@
     margin-left: 130px;
     
   }
-  input::placeholder{
+  .input::placeholder{
     padding: 10px;
     font-size: 20px;
     color: white;
@@ -158,7 +158,7 @@
   .selectDiv{
     margin-left: 30px;
   }
-  select{
+  .select{
     background: none;
     outline: none;
     box-shadow: none;
