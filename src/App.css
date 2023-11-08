@@ -195,8 +195,14 @@ canvas{
 .marginTop390px{
   margin-top: 390px !important;
 }
+.marginTop470px{
+  margin-top: 470px !important;
+}
 .marginBottom50px{
   margin-bottom: 50px;
+}
+.padding250px0px{
+  padding: 250px 0px;
 }
 .w50per{
   width:50% !important;
@@ -213,14 +219,17 @@ canvas{
 .title_h1{
   font-size: 80px;
   font-weight: 900;
+ 
 }
 .title_h2{
   font-size: 40px;
   font-weight: 700;
+ 
 }
 .fontSize18_p{
   font-size: 18px;
   margin-bottom: 10px;
+  
 }
 .fontSize20_p{
   font-size: 20px;
@@ -259,6 +268,7 @@ canvas{
   left: calc(100% + 50px);
   opacity: 1;
 }
+
 
 
 

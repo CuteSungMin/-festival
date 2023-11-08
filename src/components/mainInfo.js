@@ -10,9 +10,9 @@ const MainInfo = () => {
         <section className="mainInfo w1500">
             <article className="mainInfo_article">
                 <div className="w50per">
-                    <h1 className="title_h1"><a>{t('sec1.title')}</a></h1>
+                    <h1 className="title_h1 mainInfo_h1"><a>{t('sec1.title')}</a></h1>
                     <p className="fontSize18_p marginTop150px">{t('sec1.cnt1')}.</p>
-                    <p className="fontSize18_p">{t('sec1.cnt1')}.</p>
+                    <p className="fontSize18_p" >{t('sec1.cnt1')}.</p>
                     <p className="fontSize18_p">{t('sec1.cnt3')}.</p>
                     <Link to="/Guide"><a className="MoreBtn">{t('btn')}</a></Link>
                 </div>

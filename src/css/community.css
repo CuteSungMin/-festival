@@ -1,15 +1,5 @@
-.sec4Padding{
-    padding: 250px 0px;
-}
-.section4Aticle{
+.communityAticle{
     width: 50%;
-}
-h1{
-    font-size: 80px;
-    font-weight:700; 
-}
-.sec4MoreBtn{
-    margin-top: 420px;
 }
 .notice{
     position: relative;
@@ -17,22 +7,18 @@ h1{
     border-top: 1px solid white;
     cursor: pointer;
 }
-
 .notice:last-of-type{
     border-bottom:1px solid white;
 }
-.notice p{
-    font-size: 18px;
-    font-weight: 400;
-}
+
 
 @media (max-width:1520px) {
     .w1500{
         width: 90% !important;
         margin: 0 auto;
     }
-    h1 {font-size: calc(100vw * (80/1500));}
-    .notice p {font-size: 18px;}
+    .title_h1 {font-size: calc(100vw * (80/1500));}
+    .fontSize20_p{font-size: 18px;}
   }
   
   @media (max-width:1024px) {
@@ -40,12 +26,12 @@ h1{
         width: 90% !important;
         margin: 0 auto;
     }
-    .section4 { width: 90%;}
-    h1 {margin: 0px 25%; font-size: calc(100vw * (80/1500));}
-   .notice p {font-size: 18px;}
+    .program { width: 90%;}
+    .title_h1 {margin: 0px 25%; font-size: calc(100vw * (80/1500));}
+   .fontSize20_p{font-size: 18px;}
    .flex{display: block;}
-   .section4Aticle{width: 100%; text-align: center;}
-   .sec4MoreBtn{margin:60px 0}
+   .programAticle{width: 100%; text-align: center;}
+   .marginTop470px{margin:60px 0 !important;}
    .notice{display: flex;}
     
   }

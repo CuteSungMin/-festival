@@ -19,13 +19,27 @@
     font-size: 20px;
     margin: 0 30px 30px 0;
 }
-
+.mainInfo_h1{
+    margin-bottom: 50px;
+}
+.margin0px{
+    margin: 0px;
+}
 @media (max-width:1500px) { 
     .title_h1{
         font-size: calc(100vw * (80 /1500));
     }
+    .mainInfo_article>div{
+        width: 100%;
+        text-align: left;
+    }
+    .marginTop150px{
+        margin-top: 40px;
+    }
+
   }
 @media (max-width:1024px) {
+    
     .title_h1{
         font-size: calc(100vw * (80 / 1300));
     }
@@ -34,7 +48,9 @@
     }
     .mainInfo_article>div{
         width: 100% !important;
+        text-align: center;
     }
+
 }
 @media (max-width:820px) {
     .mainInfo_article>div{
@@ -49,9 +65,12 @@
     .mainInfo_titleBox{
         font-size: calc(100vw * (20 /820));
     }
+    .mainInfo_h1{
+        margin-bottom: 150px;
+    }
 }
 @media (max-width: 480px) {
-    .section1Article>div{
+    .mainInfo_article>div{
         text-align: center;
     }
     .title_h1{
