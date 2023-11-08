@@ -12,13 +12,17 @@ footer{
     width: 100%;
     height: 100%;
 }
+
 .tel{
     font-size: 16px;
 }
-.tel p{
+.tel>p{
     margin-bottom: 15px;
     display: flex;
     font-size: 16px;
+}
+.tel>p:first-child{
+    white-space: nowrap;
 }
 .tel span{
     /* width: 100px; */
