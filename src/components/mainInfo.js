@@ -1,38 +1,62 @@
+import { Link } from 'react-router-dom';
 import "../css/mainInfo.css";
+import i18n from '../lang/i18n';
+import { withTranslation,useTranslation } from 'react-i18next';
 
 const MainInfo = () => {
+    const { t } = useTranslation();
 
     return ( 
         <section className="mainInfo w1500">
             <article className="mainInfo_article">
                 <div className="w50per">
-                    <h1 className="title_h1"><a>경복궁 별빛야행</a></h1>
-                    <p className="fontSize18_p marginTop150px">경복궁의 가장 깊은 곳 북측 권역의 문이 열립니다.</p>
-                    <p className="fontSize18_p">외소주방에서 궁중음식체험과 전통 공연을 즐기고,</p>
-                    <p className="fontSize18_p">전문 해설사와 함께 별빛 산책을 떠나보세요.</p>
-                    <a className="MoreBtn">더보기</a>
+                    <h1 className="title_h1"><a>{t('sec1.title')}</a></h1>
+                    <p className="fontSize18_p marginTop150px">{t('sec1.cnt1')}.</p>
+                    <p className="fontSize18_p">{t('sec1.cnt1')}.</p>
+                    <p className="fontSize18_p">{t('sec1.cnt3')}.</p>
+                    <Link to="/Guide"><a className="MoreBtn">{t('btn')}</a></Link>
                 </div>
                 <div className="w50per">
                     <table className="marginTop100px">
                         <tr>
-                            <td className="mainInfo_titleBox"><sapn>행</sapn><span>사</span><span>명</span></td>
-                            <td className="fontSize18_p">2023 경복궁 별빛야행</td>
+                            <td className="mainInfo_titleBox">
+                            {i18n.language === "ko" ? 
+                            (<><span>행</span><span>사</span><span>명</span></>)
+                            :(<><span>Festival name</span></>)}
+                            </td>
+                            <td className="fontSize18_p">{t('sec1.box1_1')}</td>
                         </tr>
                         <tr>
-                            <td className="mainInfo_titleBox"><span>기</span><span>간</span></td>
-                            <td className="fontSize18_p">2023년 09월 08일 ~ 2023년 11월 13일</td>
+                        <td className="mainInfo_titleBox">
+                            {i18n.language === "ko" ? 
+                            (<><span>기</span><span>간</span></>)
+                            :(<><span>Period</span></>)}
+                            </td>
+                            <td className="fontSize18_p">{t('sec1.box2_1')}</td>
                         </tr>
                         <tr>
-                            <td className="mainInfo_titleBox"><span>장</span><span>소</span></td>
-                            <td className="fontSize18_p">경복궁, 소주방, 북측전각 일대</td>
+                            <td className="mainInfo_titleBox">
+                            {i18n.language === "ko" ? 
+                            (<><span>장</span><span>소</span></>)
+                            :(<><span>Venue</span></>)}
+                            </td>
+                            <td className="fontSize18_p">{t('sec1.box3_1')}</td>
                         </tr>
                         <tr>
-                            <td className="mainInfo_titleBox"><span>행</span><span>사</span><span>문</span><span>의</span></td>
+                            <td className="mainInfo_titleBox">
+                            {i18n.language === "ko" ? 
+                            (<><span>행</span><span>사</span><span>문</span><span>의</span></>)
+                            :(<><span>Contact</span></>)}
+                            </td>
                             <td className="fontSize18_p">1522-2295</td>
                         </tr>
                         <tr>
-                            <td className="mainInfo_titleBox"><span>프</span><span>로</span><span>그</span><span>램</span></td>
-                            <td className="fontSize18_p">별빛산책로, 도슭수라상, 음식구성</td>
+                            <td className="mainInfo_titleBox">
+                            {i18n.language === "ko" ? 
+                            (<><span>프</span><span>로</span><span>그</span><span>램</span></>)
+                            :(<><span>Programs</span></>)}
+                            </td>
+                            <td className="fontSize18_p">{t('sec1.box5_1')}</td>
                         </tr>
                     </table>
                 </div>
