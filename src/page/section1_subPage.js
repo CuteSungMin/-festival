@@ -1,5 +1,5 @@
 import '../pageCss/section1_subPage.css';
-import topImg from '../img/headerImg.png';
+import headerImg from '../img/headerImg.png';
 import slogan from '../img/mainText2.png';
 import event1 from '../img/event1.jpg';
 import event2 from '../img/event2.jpg';
@@ -84,7 +84,7 @@ const Section1_supPage = () => {
     return ( 
         <section className="section1_subPage">
             <div className="infoTit">
-                <img src={topImg}></img>
+                <img src={headerImg}></img>
                 <h3>{t('sec1.main')}</h3>
             </div>
             <div className='w1500'>

@@ -6,11 +6,11 @@ const SignUp = () => {
 
     return (  
         <section className='SignUp'>
+                <div className="infoTit">
+                    <img src={headerImg}></img>
+                    <h3>회원가입</h3>
+                </div>  
                <div className='w1500'>
-                    <div className='SignUpHeader'>
-                        <div><img src={headerImg}></img></div>
-                        <h2></h2>
-                    </div>
                     <h3 className='titBox2'>회원가입</h3>
                     <div className='SignUpMain'>
                         <div className='labelBox'>

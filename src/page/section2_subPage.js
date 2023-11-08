@@ -14,11 +14,12 @@ const Section2_subPage = () => {
 
     return (  
         <section className='section2_subPage'>
-            <div className='w1500'>
-                <div className='section2SubHeader'>
-                    <div><img src={headerImg}></img></div>
-                    <h2>메인 프로그램</h2>
+               <div className="infoTit">
+                    <img src={headerImg}></img>
+                    <h3>메인프로그램</h3>
                 </div>
+            <div className='w1500'>
+             
                 <div className='section2SubTop'>
                     <article className='section2SubTopLeft'>
                         <h1>경복궁 별빛야행</h1>
