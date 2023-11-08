@@ -1,25 +1,25 @@
-import '../pageCss/section5_subPage.css'
+import '../pageCss/gallery_subPage.css'
 import headerImg from '../img/headerImg.png'
 import galleryImg1 from '../img/galleryImg1.png';
 import galleryImg2 from '../img/galleryImg2.png';
 import galleryImg3 from '../img/galleryImg3.png';
 import galleryImg4 from '../img/galleryImg4.png';
-const Section5_subPage = () => {
+const Gallery_subPage = () => {
   
 
     return (  
-        <section className='section5_subPage'>
+        <section className='gallery_subPage'>
                <div className='w1500'>
-                    <div className='section5SubHeader'>
+                    <div className='notiSubHeader'>
                         <div><img src={headerImg}></img></div>
-                        <h2>갤러리</h2>
+                        <h2 className='title_h2'>갤러리</h2>
                     </div>
-                    <div className='section5SubMain'>
-                        <article className='flex5' >
+                    <div className='gallerySubMain'>
+                        <article className='flex' >
                             <div className='galleryImg'><img src={galleryImg1}></img></div>
                             <div className='galleryImg'><img src={galleryImg2}></img></div>
                         </article>
-                        <article className='flex5' >
+                        <article className='flex' >
                             <div className='galleryImg'><img src={galleryImg3}></img></div>
                             <div className='galleryImg'><img src={galleryImg4}></img></div>
                         </article>
@@ -29,4 +29,4 @@ const Section5_subPage = () => {
     );
 }
  
-export default Section5_subPage;
+export default Gallery_subPage;

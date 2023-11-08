@@ -1,15 +1,14 @@
-import '../pageCss/section4_FAQ.css';  // CSS 파일을 가져옵니다.
+import '../pageCss/FAQ.css';  // CSS 파일을 가져옵니다.
 import headerImg from '../img/headerImg.png';  // 이미지 파일 경로를 가져옵니다.
 import iconQ from '../img/Q.png';  // 이미지 파일 경로를 가져옵니다.
 import iconA from '../img/A.png';  // 이미지 파일 경로를 가져옵니다.
 import { useRef, useEffect, useState } from 'react';  // React 라이브러리에서 useRef, useEffect, useState를 가져옵니다.
 import { Link } from 'react-router-dom';
 
-const Section4_FAQ = () => {
+const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);  // 활성화된 아코디언 인덱스를 저장하는 상태
     const [isLiOn, setLiOn] = useState(0); // 초기 메뉴 항목을 0으로 설정
     const lis = useRef([]);  // DOM 요소에 접근하기 위한 ref
-
     const faqData = [
         {
             question: '축제관람은 무료인가요?',
@@ -44,35 +43,36 @@ const Section4_FAQ = () => {
     };
 
     useEffect(() => { 
+    
         // 컴포넌트가 마운트될 때, 마우스 이벤트 리스너를 추가합니다.
 
 
-        window.onload = function(){
             lis.current.forEach((li, index) => {
                 li.addEventListener('mouseover', () => handleMouseOver(index));
                 li.addEventListener('mouseleave', () => handleMouseOver(null)); // 마우스를 떠날 때 null로 설정
             });
     
             return () => {
+
+                window.onload = function(){
                 // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거합니다.
                 lis.current.forEach((li, index) => {
                     li.removeEventListener('mouseover', () => handleMouseOver(index));
                     li.removeEventListener('mouseleave', () => handleMouseOver(null));
                 });
+            }
             };
-        }
-  
 
     }, []);
 
     return (
-        <section className='section4_subPage'>
+        <section className='FAQ'>
             <div className='w1500'>
-                <div className='section4SubHeader'>
+                <div className='notiSubHeader'>
                     <div><img src={headerImg}></img></div>  {/* Header 이미지를 표시 */}
                     <h2>FAQ</h2>
                 </div>
-                <div className='Section4_announcementBtns'>
+                <div className='notiSubHeaderBtns'>
                     <ul className='flex2'>
                         {/* 메뉴 항목을 클릭할 때 클래스를 조건부로 설정하여 활성/비활성 스타일을 적용합니다. */}
                         <Link to='/NoticeList'><li className={isLiOn === 0 ? 'on' : 'off'} ref={(li) => (lis.current[0] = li)}>공지사항</li></Link>
@@ -103,4 +103,4 @@ const Section4_FAQ = () => {
     );
 }
 
-export default Section4_FAQ;
+export default FAQ;

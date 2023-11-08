@@ -1,8 +1,8 @@
-import '../css/section4.css'
+import '../css/community.css'
 
-const Section4 = () => {
+const Community = () => {
     return (  
-        <section className='section4'>
+        <section className='community'>
             <div className="sec4Padding w1500 flex">
                 <article className="section4Aticle">
                     <h1>경복궁 커뮤니티</h1>
@@ -35,4 +35,4 @@ const Section4 = () => {
     );
 }
  
-export default Section4;
+export default Community;

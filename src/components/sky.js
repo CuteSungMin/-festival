@@ -44,7 +44,7 @@ function Sky(){
         renderer.setClearColor(0x000000, 0.0);
         
         skys.appendChild(renderer.domElement);
-
+        
         window.addEventListener("resize", () => {
             // Update sizes
             sizes.width = skys.clientWidth;

@@ -1,4 +1,4 @@
-import '../pageCss/section2_subPage.css'
+import '../pageCss/program_subPage.css'
 import headerImg from '../img/headerImg.png';
 import programImg1a from '../img/img1.jpg';
 import programImg1b from '../img/img5.png';
@@ -9,15 +9,15 @@ import programImg3b from '../img/img7.png';
 import programImg4a from '../img/img4.jpg';
 import programImg4b from '../img/img8.png';
 
-const Section2_subPage = () => {
+const Program_subPage = () => {
   
 
     return (  
         <section className='section2_subPage'>
             <div className='w1500'>
-                <div className='section2SubHeader'>
+                <div className='notiSubHeader'>
                     <div><img src={headerImg}></img></div>
-                    <h2>메인 프로그램</h2>
+                    <h2>메인 프로그램 소개</h2>
                 </div>
                 <div className='section2SubTop'>
                     <article className='section2SubTopLeft'>
@@ -130,4 +130,4 @@ const Section2_subPage = () => {
     );
 }
  
-export default Section2_subPage;
+export default Program_subPage;

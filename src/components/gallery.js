@@ -1,7 +1,7 @@
 import { useState} from 'react';
-import '../css/section5.css'
+import '../css/gallery.css'
 
-const Section5 = () => {
+const Gallery = () => {
     //위에 슬라이드
     const [topMove, setTopMove] = useState(true);
     const topOnStop = () => setTopMove(false);
@@ -23,11 +23,11 @@ const Section5 = () => {
     ];
 
     return (  
-        <section className='section5'>
+        <section className='gallery'>
             <article className='w1500'>
-                <h1 className='section5Title'>경복궁 갤러리</h1>
+                <h1 className='title_h1'>경복궁 갤러리</h1>
             </article>
-            <article className="slideWrapper">
+            <article className="slideWrapper marginTop150px">
                     <div className="moveWrapper">
                          {/*State False면 Class가 Stop 으로 바뀌면서 멈춤 */}
                         <ul className={"slide5 topOriginal" + (topMove ? "" : " stop")}>
@@ -76,4 +76,4 @@ const Section5 = () => {
     );
 }
  
-export default Section5;
+export default Gallery;

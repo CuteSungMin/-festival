@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../css/header.css'
+import '../css/Header.css'
 import i18n from '../lang/i18n';
+import Logo_white from '../img/Logo_white.png';
+import login from '../img/login.png';
 import { withTranslation,useTranslation } from 'react-i18next';
 
 const Header  = () => {
@@ -34,7 +36,7 @@ const Header  = () => {
 
       <header className="stickyHead">
         <div className='stickyWebNav'>
-          <Link to="/"><img alt='로고' className="headerLogo" src={imgUrl + 'img/Logo_white.png'}></img></Link>
+          <Link to="/"><img alt='로고' className="headerLogo" src={Logo_white}></img></Link>
           <ul>
             <Link to="/Guide"><li>{t('header.menu1')}</li></Link>
             <Link to="/Program"><li>{t('header.menu2')}</li></Link>
@@ -44,7 +46,7 @@ const Header  = () => {
 
           </ul>
           <div className="headRight">
-            <Link to="/Login"><img alt='로그인 아이콘' className="loginIcon" src={imgUrl + `img/login.png`}></img></Link>
+            <Link to="/Login"><img alt='로그인 아이콘' className="loginIcon" src={login}></img></Link>
             {/* <select className='lang'>
               <option value='kor'>kor</option>
               <option value='eng'>eng</option>

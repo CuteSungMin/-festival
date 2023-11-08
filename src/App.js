@@ -3,25 +3,26 @@ import "./css/reset.css";
 import { Routes, Route } from 'react-router-dom'
 import { useState, useRef, useEffect} from "react";
 import LoadingImg from './img/mainText2.png'
-import Sky from './component/sky'
-import Top from "./component/top"
-import Header from "./component/header"
-import Footer from "./component/footer";
-import Main from "./component/main"
-import { withTranslation } from "react-i18next";
+
+//components
+import Sky from './components/sky'
+import Top from "./components/top"
+import Header from "./components/header"
+import Footer from "./components/footer";
+import Main from "./components/main"
 
 //Pages
-import Section1_subPage from "./page/section1_subPage";
-import Section2_subPage from "./page/section2_subPage";
-import Section3_subPage from "./page/section3_subPage";
-import Section5_subPage from "./page/section5_subPage";
+import MainInfo_subPage from "./page/mainInfo_subPage";
+import Program_subPage from "./page/program_subPage";
+import Event_subPage from "./page/event_subPage";
+import Gallery_subPage from "./page/gallery_subPage";
 import NotFound from './page/notFound';
 
 // community
 import NotiDetail from './page/notiDetail';
 import NotiList from './page/notiList';
 import NotiWrite from './page/notiWrite';
-import Section4_FAQ from './page/section4_FAQ';
+import FAQ from './page/FAQ';
 
 // join
 import Login from "./joinPage/login";
@@ -69,22 +70,25 @@ function App() {
       </div>
       ) : (
         <div>
-        <Sky />
+        <Sky/>
+
         <Routes>
           <Route path="/" element={<><Top/><Header/><Main/></>}/>
-          <Route path="/Guide" element={<><Header/><Section1_subPage/></>}/>
-          <Route path="/Program" element={<><Header/><Section2_subPage/></>}/>
-          <Route path="/Event" element={<><Header/><Section3_subPage/></>}/>
+          <Route path="/Guide" element={<><Header/><MainInfo_subPage/></>}/>
+          <Route path="/Program" element={<><Header/><Program_subPage/></>}/>
+          <Route path="/Event" element={<><Header/><Event_subPage/></>}/>
           <Route path="/NoticeList" element={<><Header/><NotiList notiData={notiData}/></>}/>
           <Route path="/NoticeList/:idx" element={<><Header/><NotiDetail notiData={notiData} notiRemove={notiRemove}/></>}/>
           <Route path="/NoticeWrite" element={<><Header/><NotiWrite notiCreate={notiCreate}/></>}/>
-          <Route path="/FAQ" element={<><Header/><Section4_FAQ /></>}/>
-          <Route path="/Gallery" element={<><Header/><Section5_subPage/></>}/>
+          <Route path="/FAQ" element={<><Header/><FAQ /></>}/>
+          <Route path="/Gallery" element={<><Header/><Gallery_subPage/></>}/>
           <Route path="/Login" element={<><Header/><Login/></>}/>
           <Route path="/Join" element={<><Header/><SignUp/></>}/>
           <Route path="*" element={<><Header/><NotFound/></>}/>
         </Routes>
+
         <Footer />
+        
         </div>)}
     </div>
   );

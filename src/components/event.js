@@ -1,7 +1,7 @@
-import '../css/section3.css';
+import '../css/event.css';
 import { useEffect, useRef, useState} from 'react';
 
-const Section3 = () => {
+const Event = () => {
   const section3Ref = useRef();
   const cardRefs = useRef([]);
   const [cardTransforms, setCardTransforms] = useState([]);
@@ -56,14 +56,14 @@ const Section3 = () => {
     "조선왕조실록의 내용을 토대로 실제 임금이 드셨던 궁중병과와 궁중약차를 오늘날에도 즐길 수 있도록 구성된 체험 프로그램입니다.",
   ];
   return (
-    <section className="section3 w1500" ref={section3Ref} >
+    <section className="event w1500" ref={section3Ref} >
       <article className="sticky">
-        <h1>경복궁 행사</h1>
+        <h1 className='title_h1 marginTop190pxW100per'>경복궁 행사</h1>
         <div className="eventWrap">
         {[1, 2, 3, 4].map((idx) => (
             <div
               key={idx}
-              className="event"
+              className="eventBox"
               style={{ transform: cardTransforms[idx - 1] }}
               ref={(cardRef) => (cardRefs.current[idx - 1] = cardRef)}
             >
@@ -76,4 +76,4 @@ const Section3 = () => {
     </section>
   );
 };
-export default Section3;
+export default Event;

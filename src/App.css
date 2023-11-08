@@ -113,10 +113,6 @@ canvas{
 .main{
   position: relative;
 }
-.w1500{
-  width: 1500px;
-  margin: 0 auto;
-}
 .loadingScreen{
   position: fixed;
   top: 0;
@@ -174,4 +170,149 @@ canvas{
   .loadingText{
     font-size: calc(100vw * (80 / 480));
   }
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+
+
+
+/* 공통  */
+.w1500{
+  width: 1500px;
+  margin: 0 auto;
+}
+.marginTop100px{
+  margin-top: 100px;
+}
+.marginTop150px{
+  margin-top: 150px;
+}
+.marginTop190pxW100per{
+  width: 100%;
+  margin-top: 190px;
+}
+
+.marginTop390px{
+  margin-top: 390px !important;
+}
+.marginBottom50px{
+  margin-bottom: 50px;
+}
+.w50per{
+  width:50% !important;
+}
+.flex {
+  display: flex;
+ justify-content: space-between;
+}
+.z-index99{
+  z-index: 99;
+}
+
+/* 텍스트 */
+.title_h1{
+  font-size: 80px;
+  font-weight: 900;
+}
+.title_h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+.fontSize18_p{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.fontSize20_p{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* 버튼 */
+.MoreBtn{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  margin-top: 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 60px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.MoreBtn:after{
+  position: absolute;
+  content: '';
+  top: calc(50% - 50px);
+  left: -50px;
+  width: 20px;
+  height: 100px;
+  background: rgba(255, 255, 255, 1);
+  transform: rotate(30deg);
+  transition: 500ms;
+  opacity: 0;
+}
+.MoreBtn:hover:after {
+  left: calc(100% + 50px);
+  opacity: 1;
+}
+
+
+
+.notiSubHeader{
+  position: relative;
+  padding: 100px 0px 50px 0px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.notiSubHeader::after{
+  position: absolute;
+  width: 150%;
+  bottom: 0;
+  left: -200px;
+  content: "";
+  border-bottom: 1px solid #888;
+}
+ .notiSubHeader>img{
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+ }
+ .notiSubHeader>h2{
+    margin-top: 50px;
+    font-size: 40px; 
+    text-align: center;
+ }
+
+.notiSubHeaderBtns{
+  position: relative;
+  width: 425px;
+  height: 65px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 90px;
+  border-radius: 50px;
+  border: 2px solid white;
+
+}
+.notiSubHeaderBtns > ul{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.notiSubHeaderBtns > ul li{
+  width: 140px;
+  height: 61px;
+  font-size: 18px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.on{
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
 }

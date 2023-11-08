@@ -1,5 +1,5 @@
-import '../pageCss/section1_subPage.css';
-import topImg from '../img/headerImg.png';
+import '../pageCss/mainInfo_subPage.css';
+import headerImg from '../img/headerImg.png';
 import slogan from '../img/mainText2.png';
 import event1 from '../img/event1.jpg';
 import event2 from '../img/event2.jpg';
@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 
 
 const {kakao} = window;
-const Section1_supPage = () => {
+const MainInfo_subPage = () => {
     useEffect(() => {
         AOS.init();
       })
@@ -67,10 +67,10 @@ const Section1_supPage = () => {
     }, [location]);
     
     return ( 
-        <section className="section1_subPage">
-            <div className="infoTit">
-                <img src={topImg}></img>
-                <h3>별빛야행 소개</h3>
+        <section className="mainInfo_subPage">
+            <div className='notiSubHeader'>
+                <div><img src={headerImg}></img></div>
+                <h2>별빛야행 소개</h2>
             </div>
             <div className='w1500'>
                 <div className='slogan'>
@@ -80,7 +80,7 @@ const Section1_supPage = () => {
                     <p>모두가 함께 즐기는 서울의 대표 문화예술축제로 한걸음 더 다가갈 한달간의 여정에 여러분을 초대합니다.</p>
                 </div>
                 <article className='mainInfo'>
-                    <h2>경복궁<span>축제</span></h2>
+                    <h2 className='title_h1'>경복궁<span>축제</span></h2>
                     <ul>
                         <li>
                             <b>
@@ -217,4 +217,4 @@ const Section1_supPage = () => {
      );
 }
  
-export default Section1_supPage;
+export default MainInfo_subPage;
