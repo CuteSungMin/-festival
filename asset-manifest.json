@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/festival/static/css/main.2ea2710e.css",
-    "main.js": "/festival/static/js/main.ffbe12a8.js",
+    "main.css": "/festival/static/css/main.4ab11d2d.css",
+    "main.js": "/festival/static/js/main.55b82ea0.js",
     "static/media/TEAM3.glb": "/festival/static/media/TEAM3.5a80768b3f70c0bf1ac1.glb",
     "static/media/img4.jpg": "/festival/static/media/img4.e7d1434865c02b95c2b7.jpg",
     "static/media/NotoSansKR-Bold.woff": "/festival/static/media/NotoSansKR-Bold.9c310f059e56fd4cbca0.woff",
@@ -32,11 +32,11 @@
     "static/media/headerImg.png": "/festival/static/media/headerImg.d029a733a0031a2206a8.png",
     "static/media/mainText2.png": "/festival/static/media/mainText2.15c7128f31413c207202.png",
     "index.html": "/festival/index.html",
-    "main.2ea2710e.css.map": "/festival/static/css/main.2ea2710e.css.map",
-    "main.ffbe12a8.js.map": "/festival/static/js/main.ffbe12a8.js.map"
+    "main.4ab11d2d.css.map": "/festival/static/css/main.4ab11d2d.css.map",
+    "main.55b82ea0.js.map": "/festival/static/js/main.55b82ea0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ea2710e.css",
-    "static/js/main.ffbe12a8.js"
+    "static/css/main.4ab11d2d.css",
+    "static/js/main.55b82ea0.js"
   ]
 }
