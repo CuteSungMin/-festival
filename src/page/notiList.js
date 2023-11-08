@@ -61,10 +61,7 @@ const NotiList = ({notiData}) => {
                         </tr>
                     )}
                 </table>
-                <div className='searchBox'>
-                    <input type='text' placeholder='내용 + 제목'></input>
-                    <button className='searchBtn' >검색</button>
-                </div>
+
             </article>
         </section>
      );
