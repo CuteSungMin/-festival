@@ -3,7 +3,7 @@ import {Link, useLocation} from 'react-router-dom';
 import youtube from '../img/icon_sns4.png';
 import insta from '../img/icon_sns3.png';
 import { withTranslation,useTranslation } from 'react-i18next';
-
+import i18n from '../lang/i18n';
 const Footer = () => {
     const { t } = useTranslation();
 
@@ -23,7 +23,7 @@ const Footer = () => {
     }
     const ClickEvent = ()=>{
         window.scrollTo({
-            top: `5300`,
+            top: `8177`,
             behavior: `smooth`
         })
     }
@@ -68,4 +68,4 @@ const Footer = () => {
      );
 }
  
-export default Footer;
+export default withTranslation()(Footer);

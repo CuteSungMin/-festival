@@ -27,7 +27,6 @@ import Login from "./joinPage/login";
 
 
 function App() {
-  
   const [notiData, setNotiData] = useState([]);
   const dataId = useRef(0);
   const notiCreate= (title,userName,content) =>{
@@ -46,7 +45,15 @@ function App() {
     const newlist=notiData.filter((data)=>data.notiId !== id);
     setNotiData(newlist);
   }
-  
+
+  const notiSearch = (txt)=>{
+    const searchlist=notiData.filter((data)=>{
+      data.title.toLowerCase().includes(txt.toLowerCase()) ||
+      data.content.toLowerCase().includes(txt.toLowerCase())
+    })
+    setNotiData(searchlist);
+  }
+
   const [LodingPage, setLodingPage] = useState(true);
   useEffect(()=>{
     setTimeout(()=>{
@@ -74,7 +81,7 @@ function App() {
           <Route path="/Guide" element={<><Header/><Section1_subPage/></>}/>
           <Route path="/Program" element={<><Header/><Section2_subPage/></>}/>
           <Route path="/Event" element={<><Header/><Section3_subPage/></>}/>
-          <Route path="/NoticeList" element={<><Header/><NotiList notiData={notiData}/></>}/>
+          <Route path="/NoticeList" element={<><Header/><NotiList notiData={notiData} notiSearch={notiSearch}/></>}/>
           <Route path="/NoticeList/:idx" element={<><Header/><NotiDetail notiData={notiData} notiRemove={notiRemove}/></>}/>
           <Route path="/NoticeWrite" element={<><Header/><NotiWrite notiCreate={notiCreate}/></>}/>
           <Route path="/FAQ" element={<><Header/></>}/>

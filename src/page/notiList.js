@@ -1,25 +1,18 @@
 import {Link } from 'react-router-dom';
-import {useState, useRef} from 'react';
+import {useState, useRef,useContext} from 'react';
 import topImg from '../img/headerImg.png';
 import '../pageCss/notiList.css';
 
-const NotiList = ({notiData}) => {
-    const [count,setCount] = useState(10);
-    const btn = useRef();
-    // const moreBtn = ()=>{
-    //     if(count < notiData.length){
-    //         setCount(count + 10)
-    //     }else{
-    //         // console.log(btn.current)
-    //         // btn.current.style.display='none';
-    //         btn.current.style.setProperty('display','none');
-    //         btn.current.style.backgroundColor='red';
-    //         // btn.current.style.color='white';
-    //     }
-    // }
-    
-    
-   
+const NotiList = ({notiData,notiSearch}) => {
+    const [searchInput, setSearchInput] = useState();
+
+    const inputTxt = (e) =>{
+        setSearchInput(e.target.value);
+    }
+    const searchFunc = ()=>{
+        notiSearch(inputTxt)
+    }
+
     return ( 
         <section className="notiList">
             <div className="infoTit">
@@ -77,8 +70,8 @@ const NotiList = ({notiData}) => {
                     )}
                 </table>
                 <div className='searchBox'>
-                    <input type='text' placeholder='내용 + 제목'></input>
-                    <button className='searchBtn' >검색</button>
+                    <input type='text' value={searchInput} onChange={inputTxt} placeholder='내용 + 제목'></input>
+                    <button className='searchBtn' onClick={searchFunc}>검색</button>
                 </div>
             </article>
         </section>

@@ -15,10 +15,12 @@ footer{
 .tel{
     font-size: 16px;
 }
+
 .tel p{
     margin-bottom: 15px;
     display: flex;
     font-size: 16px;
+    /* white-space: nowrap; */
 }
 .tel span{
     /* width: 100px; */
